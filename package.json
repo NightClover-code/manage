@@ -1,6 +1,9 @@
 {
   "name": "manage",
   "private": true,
+  "description": "Manage - Plan projects with purpose",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
