@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,8 @@
   min-height: 100vh;
   overflow: hidden;
   font-size: 18px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   .wrapper {
     min-width: 250px;
     max-width: 2000px;

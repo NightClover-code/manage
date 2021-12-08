@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
   return (
     <MainLayout>
       <SEO {...seoConfig} />
-      <div className="wrapper">Hello</div>
+      <div className="wrapper">qsc</div>
     </MainLayout>
   );
 };
