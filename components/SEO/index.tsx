@@ -10,7 +10,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="shortcut icon" type="images/png" href="./images/favicon.png" />
+      <link rel="shortcut icon" type="images/svg" href="./images/favicon.svg" />
 
       <meta name="description" content={description} />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
