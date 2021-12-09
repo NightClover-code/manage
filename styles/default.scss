@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+@import './global';
+@import '../components/Header/header';
+@import '../components/Header/NavBar/navbar';
 
 * {
   margin: 0;
