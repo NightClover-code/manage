@@ -14,27 +14,14 @@
 }
 
 .app__container {
-  min-height: 100vh;
-  overflow: hidden;
-  font-size: 18px;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 400;
+  @apply min-h-screen overflow-hidden text-sm font-mulish font-normal;
 }
 
-.app__container .wrapper {
-  min-width: 250px;
-  max-width: 2000px;
+.wrapper {
+  @apply min-w-[250px] max-w-[2000px];
 }
 
 .overlay {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(37, 43, 70, 0.95);
+  @apply w-full h-full absolute top-0 left-0 bottom-0 right-0 bg-darkOverlay;
 }
 /*# sourceMappingURL=default.css.map */
