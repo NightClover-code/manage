@@ -15,7 +15,7 @@ module.exports = {
       darkOverlay: 'rgba(37, 43, 70, 0.95)',
     },
     fontSize: {
-      sm: '18px',
+      sm: '17px',
     },
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],

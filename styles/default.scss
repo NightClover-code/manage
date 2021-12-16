@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './global';
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@
 }
 
 .app__container {
-  @apply min-h-screen overflow-hidden text-sm font-mulish font-normal;
+  @apply min-h-screen overflow-hidden text-sm font-mulish font-normal text-blue;
 }
 
 .wrapper {
@@ -23,5 +25,13 @@
 }
 
 .overlay {
-  @apply w-full h-full absolute top-0 left-0 bottom-0 right-0 bg-darkOverlay;
+  @apply content-none w-full h-full absolute top-0 left-0 bottom-0 right-0 bg-darkOverlay;
+}
+
+.flex__center {
+  @apply flex content-center justify-center;
+}
+
+.flex__between {
+  @apply flex justify-between content-center;
 }

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+li {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.custom__container {
+  @apply container w-10/12 mx-auto overflow-hidden;
+}
+
+.app__container {
+  @apply min-h-screen overflow-hidden text-sm font-mulish font-normal text-blue;
+}
+
+.wrapper {
+  @apply min-w-[250px] max-w-[2000px];
+}
+
+.overlay {
+  @apply content-none w-full h-full absolute top-0 left-0 bottom-0 right-0 bg-darkOverlay;
+}
+
+.flex__center {
+  @apply flex content-center justify-center;
+}
+
+.flex__between {
+  @apply flex justify-between content-center;
+}
+/*# sourceMappingURL=default.css.map */
