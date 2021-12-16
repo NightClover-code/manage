@@ -4,10 +4,10 @@ import { ChevronRightIcon, Logo } from '../Icons';
 const NavBar = () => {
   return (
     <nav className="flex__between mt-[55px] font-medium">
-      <div className="cursor-pointer">
+      <div className="cursor-pointer flex__center">
         <Logo />
       </div>
-      <ul className="flex__center gap-[40px]">
+      <ul className="flex">
         <li>Features</li>
         <li>Pricing</li>
         <li className="flex__center">
@@ -17,9 +17,9 @@ const NavBar = () => {
         <li>Blog</li>
       </ul>
       <ul className="flex__center">
-        <li>Login</li>
+        <li className="mr-2">Login</li>
         <li>
-          <Button className="ml-5">Sign up</Button>
+          <Button>Sign up</Button>
         </li>
       </ul>
     </nav>

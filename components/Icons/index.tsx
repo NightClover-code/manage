@@ -1,6 +1,5 @@
 export const ChevronRightIcon = () => (
   <svg
-    className="cursor-pointer mt-[4px] ml-[2px]"
     width="18"
     height="18"
     viewBox="0 0 18 18"
@@ -16,7 +15,6 @@ export const ChevronRightIcon = () => (
 
 export const Logo = () => (
   <svg
-    className="mt-1"
     width="146"
     height="24"
     viewBox="0 0 146 24"

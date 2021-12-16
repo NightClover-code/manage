@@ -3,7 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 li {
-  cursor: pointer;
+  @apply cursor-pointer mx-[20px];
+}
+
+.button {
+  @apply bg-orange text-white w-[100px] h-[42px] rounded-[8px] shadow-main;
 }
 
 * {
@@ -14,7 +18,7 @@ li {
 }
 
 .custom__container {
-  @apply container w-10/12 mx-auto overflow-hidden;
+  @apply container w-10/12 mx-auto;
 }
 
 .app__container {
@@ -30,10 +34,10 @@ li {
 }
 
 .flex__center {
-  @apply flex content-center justify-center;
+  @apply flex items-center justify-center;
 }
 
 .flex__between {
-  @apply flex justify-between content-center;
+  @apply flex items-center justify-between;
 }
 /*# sourceMappingURL=default.css.map */

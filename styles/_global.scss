@@ -1,3 +1,7 @@
 li {
-  cursor: pointer;
+  @apply cursor-pointer mx-[20px];
+}
+
+.button {
+  @apply bg-orange text-white w-[100px] h-[42px] rounded-[8px] shadow-main;
 }

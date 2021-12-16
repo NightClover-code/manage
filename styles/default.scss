@@ -13,7 +13,7 @@
 }
 
 .custom__container {
-  @apply container w-10/12 mx-auto overflow-hidden;
+  @apply container w-10/12 mx-auto;
 }
 
 .app__container {
@@ -29,9 +29,9 @@
 }
 
 .flex__center {
-  @apply flex content-center justify-center;
+  @apply flex items-center justify-center;
 }
 
 .flex__between {
-  @apply flex justify-between content-center;
+  @apply flex items-center justify-between;
 }
