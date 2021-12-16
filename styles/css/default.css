@@ -2,12 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.container {
-  width: 80%;
-  overflow: hidden;
-  margin: auto;
-}
-
 * {
   margin: 0;
   padding: 0;

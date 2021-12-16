@@ -25,5 +25,5 @@ The designs were created to the following widths:
 
 ### Fonts
 
-- Family: [%ulish](https://fonts.google.com/specimen/Mulish)
+- Family: [Mulish](https://fonts.google.com/specimen/Mulish)
 - Weights: 400, 700
