@@ -1,3 +1,5 @@
+//importing components
+import Image from 'next/image';
 import Button from '../Button';
 
 const Hero = () => {
@@ -15,6 +17,9 @@ const Hero = () => {
         <div className="flex__center mt-10">
           <Button className="mr-5">Download</Button>
           <Button className="!text-blue !bg-white">Register</Button>
+        </div>
+        <div className="relative w-[1066px] h-[695px] mt-10 mx-auto">
+          <Image src="/images/mockup.svg" layout="fill" alt="mockup" />
         </div>
       </div>
     </section>

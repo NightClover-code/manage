@@ -1,3 +1,4 @@
+//importing components
 import Button from '../Button';
 import { ChevronRightIcon, Logo } from '../Icons';
 
