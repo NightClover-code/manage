@@ -1,12 +1,13 @@
 //importing components
 import Button from '../Button';
-import { ChevronRightIcon, Logo } from '../Icons';
+import { ChevronRightIcon } from '../Icons';
+import Image from 'next/image';
 
 const NavBar = () => {
   return (
     <nav className="flex__between mt-10 font-medium">
-      <div className="cursor-pointer flex__center">
-        <Logo />
+      <div className="cursor-pointer flex__center relative w-[146px] h-[24px]">
+        <Image src="/images/logo.svg" layout="fill" alt="logo" />
       </div>
       <ul className="flex">
         <li>Features</li>
