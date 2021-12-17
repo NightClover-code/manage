@@ -3,7 +3,7 @@ import { ChevronRightIcon, Logo } from '../Icons';
 
 const NavBar = () => {
   return (
-    <nav className="flex__between mt-[55px] font-medium">
+    <nav className="flex__between mt-10 font-medium">
       <div className="cursor-pointer flex__center">
         <Logo />
       </div>

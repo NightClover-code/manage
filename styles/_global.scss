@@ -1,7 +1,15 @@
 li {
-  @apply cursor-pointer mx-[20px];
+  @apply cursor-pointer mx-[22px];
+}
+
+h1 {
+  @apply text-[50px] font-bold max-w-[700px] text-center leading-[60px];
+}
+
+p {
+  @apply leading-[27px] text-offBlue text-[18px];
 }
 
 .button {
-  @apply bg-orange text-white w-[100px] h-[42px] rounded-[8px] shadow-main;
+  @apply bg-orange text-white px-[22px] py-[10px] rounded-[8px] shadow-main border-none outline-none font-bold text-[16px];
 }
