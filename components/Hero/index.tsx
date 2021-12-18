@@ -31,9 +31,6 @@ const Hero = () => {
         <div className="relative w-[1066px] h-[695px] mt-10 mx-auto">
           <Image src="/images/mockup.svg" layout="fill" alt="mockup" />
         </div>
-        <div className="grid grid-cols-5">
-          <Image src="/images/github.svg" alt="github" layout="fill" />
-        </div>
       </div>
     </section>
   );
