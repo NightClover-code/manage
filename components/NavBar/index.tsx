@@ -7,9 +7,10 @@ const NavBar = () => {
   return (
     <nav className="flex__between mt-10 font-medium">
       <CustomImage
-        className="cursor-pointer flex__center relative w-[146px] h-[24px]"
+        className="cursor-pointer flex__center"
+        width={146}
+        height={24}
         src="/images/logo.svg"
-        layout="fill"
         alt="logo"
       />
       <ul className="flex">

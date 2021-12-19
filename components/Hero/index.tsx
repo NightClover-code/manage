@@ -1,3 +1,6 @@
+//importing utils
+import { companiesIcons } from '../../utils';
+import { v4 as randomID } from 'uuid';
 //importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
@@ -7,15 +10,17 @@ const Hero = () => {
     <section className="hero__section">
       <div className="custom__container">
         <CustomImage
-          className="w-[150px] h-[150px] absolute left-24 top-[40rem]"
+          className="absolute left-24 top-[40rem]"
+          width={150}
+          height={150}
           src="/images/icon-bell.svg"
-          layout="fill"
           alt="bell icon"
         />
         <CustomImage
-          className="w-[150px] h-[150px] absolute right-32 top-[26rem]"
+          className="absolute right-32 top-[26rem]"
           src="/images/icon-calendar.svg"
-          layout="fill"
+          width={150}
+          height={150}
           alt="calendar icon"
         />
         <h1 className="mx-auto mt-28">
@@ -35,7 +40,21 @@ const Hero = () => {
           src="/images/mockup.svg"
           layout="fill"
           alt="mockup"
+          priority
         />
+        <div className="grid grid-cols-5">
+          {companiesIcons.map(({ width, height, iconUrl }) => {
+            return (
+              <CustomImage
+                key={randomID()}
+                width={width}
+                height={height}
+                src={`/images/${iconUrl}.svg`}
+                alt={`${iconUrl} icon`}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );

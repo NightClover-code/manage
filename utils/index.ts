@@ -1,9 +1,28 @@
-export const heroIcons = () => [
+export const companiesIcons = [
   {
-    iconUrl: '',
-    alt: '',
-    width: '',
-    height: '',
+    iconUrl: 'github',
+    width: 168,
+    height: 58,
+  },
+  {
+    iconUrl: 'slack',
+    width: 163,
+    height: 40,
+  },
+  {
+    iconUrl: 'amazon',
+    width: 150,
+    height: 47,
+  },
+  {
+    iconUrl: 'airbnb',
+    width: 163,
+    height: 53,
+  },
+  {
+    iconUrl: 'facebook',
+    width: 153,
+    height: 32,
   },
 ];
 
