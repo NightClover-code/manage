@@ -1,21 +1,23 @@
 //importing components
-import Image from 'next/image';
 import Button from '../Button';
+import CustomImage from '../CustomImage';
 
 const Hero = () => {
   return (
     <section className="hero__section">
       <div className="custom__container">
-        <div className="w-[150px] h-[150px] absolute left-24 top-[40rem]">
-          <Image src="/images/icon-bell.svg" layout="fill" alt="bell icon" />
-        </div>
-        <div className="w-[150px] h-[150px] absolute right-32 top-[26rem]">
-          <Image
-            src="/images/icon-calendar.svg"
-            layout="fill"
-            alt="calendar icon"
-          />
-        </div>
+        <CustomImage
+          className="w-[150px] h-[150px] absolute left-24 top-[40rem]"
+          src="/images/icon-bell.svg"
+          layout="fill"
+          alt="bell icon"
+        />
+        <CustomImage
+          className="w-[150px] h-[150px] absolute right-32 top-[26rem]"
+          src="/images/icon-calendar.svg"
+          layout="fill"
+          alt="calendar icon"
+        />
         <h1 className="mx-auto mt-28">
           Manage projects properly. <span className="text-orange">Plan</span>{' '}
           with purpose.
@@ -28,9 +30,12 @@ const Hero = () => {
           <Button className="mr-5">Download</Button>
           <Button className="!text-blue !bg-white !px-[27px]">Register</Button>
         </div>
-        <div className="relative w-[1066px] h-[695px] mt-10 mx-auto">
-          <Image src="/images/mockup.svg" layout="fill" alt="mockup" />
-        </div>
+        <CustomImage
+          className="relative w-[1066px] h-[695px] mt-10 mx-auto"
+          src="/images/mockup.svg"
+          layout="fill"
+          alt="mockup"
+        />
       </div>
     </section>
   );
