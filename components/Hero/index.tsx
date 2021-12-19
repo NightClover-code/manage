@@ -4,6 +4,7 @@ import { v4 as randomID } from 'uuid';
 //importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -42,10 +43,11 @@ const Hero = () => {
           alt="mockup"
           priority
         />
-        <div className="grid grid-cols-5">
-          {companiesIcons.map(({ width, height, iconUrl }) => {
+        <div className="grid grid-cols-5 items-center mt-10 mb-20">
+          {companiesIcons.map(({ width, height, iconUrl, className }) => {
             return (
-              <CustomImage
+              <Image
+                className={className}
                 key={randomID()}
                 width={width}
                 height={height}

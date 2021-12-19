@@ -18,6 +18,14 @@ p {
   @apply bg-orange text-white px-[22px] py-[10px] rounded-[8px] shadow-main border-none outline-none font-bold text-[16px];
 }
 
+.amazon {
+  margin-top: 7px !important;
+}
+
+span {
+  overflow: visible !important;
+}
+
 * {
   margin: 0;
   padding: 0;
