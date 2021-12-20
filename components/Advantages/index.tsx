@@ -3,7 +3,7 @@ import Advantage from './Item';
 
 const Advantages = () => {
   return (
-    <section className="advantages mt-48 mb-20">
+    <section className="advantages mt-52 mb-20">
       <div className="custom__container flex items-start justify-between">
         <div className="max-w-[380px]">
           <h2 className="text-[45px] mt-0">
