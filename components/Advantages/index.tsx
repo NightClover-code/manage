@@ -1,7 +1,13 @@
+import { v4 as randomID } from 'uuid';
+import { AdvantageInterface } from '../../interfaces';
 import Button from '../Button';
 import Advantage from './Item';
 
-const Advantages = () => {
+interface AdvantagesProps {
+  advantages: AdvantageInterface[];
+}
+
+const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
   return (
     <section className="advantages mt-52 mb-20">
       <div className="custom__container flex items-start justify-between">
@@ -16,10 +22,9 @@ const Advantages = () => {
           <Button className="mt-8">Learn more</Button>
         </div>
         <div className="grid grid-cols-advantages grid-rows-2 gap-20">
-          <Advantage />
-          <Advantage />
-          <Advantage />
-          <Advantage />
+          {advantages.map(advantage => {
+            return <Advantage key={randomID()} advantage={advantage} />;
+          })}
         </div>
       </div>
     </section>

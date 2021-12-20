@@ -1,20 +1,28 @@
+import { AdvantageInterface } from '../../../interfaces';
 import CustomImage from '../../CustomImage';
 
-const Advantage = () => {
+interface AdvantageProps {
+  advantage: AdvantageInterface;
+}
+
+const Advantage: React.FC<AdvantageProps> = ({ advantage }) => {
+  const {
+    title,
+    description,
+    image: { url, imgWidth, imgHeight, alt },
+  } = advantage;
+
   return (
     <div className="advatange">
       <CustomImage
         className="bg-lightOrange w-[80px] h-[80px] flex__center rounded-[20px]"
-        src="/images/zoom.svg"
-        width={42}
-        height={42}
-        alt="zoom"
+        src={url}
+        width={imgWidth}
+        height={imgHeight}
+        alt={alt}
       />
-      <h2 className="text-[29px] mt-2">Wider vision</h2>
-      <p className="mt-1">
-        Go from tracking progress at the milestone level all the way done to the
-        smallest of details.
-      </p>
+      <h2 className="text-[29px] mt-2">{title}</h2>
+      <p className="mt-1">{description}</p>
     </div>
   );
 };
