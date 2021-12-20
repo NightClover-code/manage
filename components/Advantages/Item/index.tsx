@@ -20,7 +20,7 @@ const Advantage: React.FC<AdvantageProps> = ({ advantage }) => {
         src={url}
         width={imgWidth}
         height={imgHeight}
-        alt={alt}
+        alt={`${alt}-icon`}
       />
       <h2 className="text-[29px] mt-2">{title}</h2>
       <p className="mt-1">{description}</p>

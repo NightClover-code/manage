@@ -16,3 +16,15 @@ export const advantagesQuery = gql`
     }
   }
 `;
+
+export const companiesQuery = gql`
+  query CompaniesQuery {
+    assets(where: { assetType: "company" }) {
+      imgWidth
+      imgHeight
+      id
+      url
+      alt
+    }
+  }
+`;

@@ -1,12 +1,16 @@
 //importing utils
-import { companiesIcons } from '../../utils';
 import { v4 as randomID } from 'uuid';
+import { ImageInterface } from '../../interfaces';
 //importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
 import Image from 'next/image';
 
-const Hero = () => {
+interface HeroProps {
+  companies: ImageInterface[];
+}
+
+const Hero: React.FC<HeroProps> = ({ companies }) => {
   return (
     <section className="hero__section">
       <div className="custom__container">
@@ -15,14 +19,14 @@ const Hero = () => {
           width={150}
           height={150}
           src="/images/icon-bell.svg"
-          alt="bell icon"
+          alt="bell-icon"
         />
         <CustomImage
           className="absolute right-32 top-[26rem]"
           src="/images/icon-calendar.svg"
           width={150}
           height={150}
-          alt="calendar icon"
+          alt="calendar-icon"
         />
         <h1 className="mx-auto pt-52 text-center">
           Manage projects properly. <span className="text-orange">Plan</span>{' '}
@@ -44,15 +48,15 @@ const Hero = () => {
           priority
         />
         <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20">
-          {companiesIcons.map(({ width, height, iconUrl, className }) => {
+          {companies.map(({ imgHeight, imgWidth, url, alt }) => {
             return (
               <Image
-                className={className}
+                className={alt}
                 key={randomID()}
-                width={width}
-                height={height}
-                src={`/images/${iconUrl}.svg`}
-                alt={`${iconUrl} icon`}
+                width={imgWidth}
+                height={imgHeight}
+                src={url}
+                alt={`${alt}-icon`}
               />
             );
           })}
