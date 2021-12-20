@@ -1,5 +1,7 @@
+//importng types & utils
 import { v4 as randomID } from 'uuid';
 import { AdvantageInterface } from '../../interfaces';
+//importing components
 import Button from '../Button';
 import Advantage from './Item';
 

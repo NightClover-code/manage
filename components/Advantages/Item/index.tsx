@@ -1,3 +1,4 @@
+//importing components & types
 import { AdvantageInterface } from '../../../interfaces';
 import CustomImage from '../../CustomImage';
 

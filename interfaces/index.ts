@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from 'react';
-
 export interface AdvantageInterface {
   title: string;
   description: string;
@@ -11,9 +9,4 @@ export interface ImageInterface {
   alt: string;
   imgWidth: number;
   imgHeight: number;
-}
-
-export interface AdvantagesState {
-  advantages: AdvantageInterface[];
-  setAdvantages: Dispatch<SetStateAction<AdvantageInterface[]>>;
 }
