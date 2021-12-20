@@ -2,12 +2,9 @@
 import { GetStaticProps, NextPage } from 'next';
 import { seoConfig } from '../utils';
 import { AdvantageInterface, ImageInterface } from '../interfaces';
-//importing graphql utils
-import { client } from '../lib';
-import { advantagesQuery, companiesQuery } from '../graphql';
+import { advantagesData, companiesData } from '../graphql';
 //importing components
 import SEO from '../components/SEO';
-import MainLayout from '../layouts/MainLayout';
 import Hero from '../components/Hero';
 import Advantages from '../components/Advantages';
 
@@ -17,36 +14,26 @@ interface HomePageProps {
 }
 
 const HomePage: NextPage<HomePageProps> = ({ advantages, companies }) => {
-  console.log(companies);
-
   return (
-    <MainLayout>
+    <>
       <SEO {...seoConfig} />
       <main className="wrapper">
         <Hero companies={companies} />
         <Advantages advantages={advantages} />
       </main>
-    </MainLayout>
+    </>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const {
-    data: { advantages },
-  } = await client.query({
-    query: advantagesQuery,
-  });
+  const responses = await Promise.all([advantagesData, companiesData]);
 
-  const {
-    data: { assets },
-  } = await client.query({
-    query: companiesQuery,
-  });
+  const data = responses.map(res => res.data);
 
   return {
     props: {
-      advantages,
-      companies: assets,
+      advantages: data[0].advantages,
+      companies: data[1].assets,
     },
   };
 };
