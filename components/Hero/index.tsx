@@ -24,7 +24,7 @@ const Hero = () => {
           height={150}
           alt="calendar icon"
         />
-        <h1 className="mx-auto pt-52">
+        <h1 className="mx-auto pt-52 text-center">
           Manage projects properly. <span className="text-orange">Plan</span>{' '}
           with purpose.
         </h1>
@@ -43,7 +43,7 @@ const Hero = () => {
           alt="mockup"
           priority
         />
-        <div className="grid grid-cols-5 items-center mt-10 mb-20">
+        <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20">
           {companiesIcons.map(({ width, height, iconUrl, className }) => {
             return (
               <Image

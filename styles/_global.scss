@@ -2,8 +2,9 @@ li {
   @apply cursor-pointer mx-[22px];
 }
 
-h1 {
-  @apply text-[50px] font-bold max-w-[700px] text-center leading-[60px];
+h1,
+h2 {
+  @apply text-[50px] font-bold max-w-[700px] leading-[60px];
 }
 
 p {
@@ -23,9 +24,5 @@ span {
 }
 
 .hero__section {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 151, 99, 0.25) 0%,
-    rgba(196, 196, 196, 0) 100%
-  );
+  @apply bg-gradient-to-b from-linearOrange to-linearWhite;
 }
