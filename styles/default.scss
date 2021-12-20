@@ -18,11 +18,6 @@
 
 .app__container {
   @apply min-h-screen overflow-hidden text-sm font-mulish font-normal text-blue;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 151, 99, 0.25) 0%,
-    rgba(196, 196, 196, 0) 100%
-  );
 }
 
 .wrapper {

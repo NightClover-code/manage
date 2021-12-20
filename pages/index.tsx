@@ -5,6 +5,7 @@ import { seoConfig } from '../utils';
 import SEO from '../components/SEO';
 import MainLayout from '../layouts/MainLayout';
 import Hero from '../components/Hero';
+import Advantages from '../components/Advantages';
 
 const HomePage: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: NextPage = () => {
       <SEO {...seoConfig} />
       <main className="wrapper">
         <Hero />
+        <Advantages />
       </main>
     </MainLayout>
   );

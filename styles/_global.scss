@@ -21,3 +21,11 @@ p {
 span {
   overflow: visible !important;
 }
+
+.hero__section {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 151, 99, 0.25) 0%,
+    rgba(196, 196, 196, 0) 100%
+  );
+}

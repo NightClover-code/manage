@@ -24,7 +24,7 @@ const Hero = () => {
           height={150}
           alt="calendar icon"
         />
-        <h1 className="mx-auto mt-28">
+        <h1 className="mx-auto pt-52">
           Manage projects properly. <span className="text-orange">Plan</span>{' '}
           with purpose.
         </h1>
