@@ -1,18 +1,13 @@
-interface AchievementProps {
-  title: string;
-  result: number;
-  resultType?: string;
-  className?: string;
-}
+import { AchievementInterface } from '../../../interfaces';
 
-const Achievement: React.FC<AchievementProps> = ({
+const Achievement: React.FC<AchievementInterface> = ({
   title,
   result,
   resultType,
-  className,
+  borderLeft,
 }) => {
   return (
-    <div className={className}>
+    <div className={borderLeft ? 'border-l-2 border-gray' : ''}>
       <h2 className="text-orange">
         {result}
         {resultType}

@@ -1,6 +1,10 @@
 //importing utils
 import { client } from '../lib';
-import { advantagesQuery, companiesQuery } from './graphqlQueries';
+import {
+  advantagesQuery,
+  companiesQuery,
+  achievementsQuery,
+} from './graphqlQueries';
 
 export const advantagesData = client.query({
   query: advantagesQuery,
@@ -8,4 +12,8 @@ export const advantagesData = client.query({
 
 export const companiesData = client.query({
   query: companiesQuery,
+});
+
+export const achievementsData = client.query({
+  query: achievementsQuery,
 });

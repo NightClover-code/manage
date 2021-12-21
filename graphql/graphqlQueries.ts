@@ -28,3 +28,14 @@ export const companiesQuery = gql`
     }
   }
 `;
+
+export const achievementsQuery = gql`
+  query AchievementsQuery {
+    achievements {
+      title
+      result
+      resultType
+      borderLeft
+    }
+  }
+`;

@@ -26,6 +26,7 @@ module.exports = {
         linearOrange: 'rgba(255, 151, 99, 0.25)',
         linearWhite: 'rgba(196, 196, 196, 0)',
         lightOrange: 'rgb(254, 231, 219)',
+        borderGray: 'rgba(209, 204, 197, 1)',
       },
       boxShadow: {
         main: '0px 15px 40px rgba(249, 119, 54, 0.3)',
