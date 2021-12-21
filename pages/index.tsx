@@ -8,6 +8,7 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Advantages from '../components/Advantages';
 import Achievements from '../components/Achievements';
+import Services from '../components/Services';
 
 interface HomePageProps {
   advantages: AdvantageInterface[];
@@ -22,6 +23,7 @@ const HomePage: NextPage<HomePageProps> = ({ advantages, companies }) => {
         <Hero companies={companies} />
         <Advantages advantages={advantages} />
         <Achievements />
+        <Services />
       </main>
     </>
   );

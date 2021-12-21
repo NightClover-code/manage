@@ -6,12 +6,15 @@ module.exports = {
   theme: {
     fontSize: {
       sm: '17px',
+      xs: '16px',
+      xxs: '15px',
     },
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],
     },
     extend: {
       colors: {
+        red: 'rgba(235, 87, 87, 1)',
         orange: 'rgb(249, 119, 54)',
         blue: 'rgb(33, 63, 112)',
         offBlue: 'rgba(36, 45, 82, 0.85)',
