@@ -1,3 +1,4 @@
+//importing components
 import Service from './Item';
 
 const Services = () => {

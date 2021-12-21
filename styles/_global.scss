@@ -26,3 +26,15 @@ span {
 .hero__section {
   @apply bg-gradient-to-b from-linearOrange to-linearWhite;
 }
+
+.special {
+  @apply bg-orange text-white;
+
+  ul {
+    @apply text-white opacity-[0.85];
+  }
+
+  button {
+    @apply bg-white text-orange;
+  }
+}

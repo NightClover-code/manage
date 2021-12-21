@@ -1,9 +1,16 @@
+//importing components
 import Image from 'next/image';
 import Button from '../../Button';
 
-const Service = () => {
+interface ServiceProps {
+  className?: string;
+}
+
+const Service: React.FC<ServiceProps> = ({ className }) => {
   return (
-    <div className="flex items-center flex-col bg-lightOrange rounded-[20px] shadow-service pt-10">
+    <div
+      className={`flex items-center flex-col bg-lightOrange rounded-[20px] shadow-service pt-10 ${className}`}
+    >
       <span className="text-[20px] font-semibold">Standart</span>
       <h1 className="mt-4">$21</h1>
       <h3 className="mt-3 text-sm font-semibold">Per Month</h3>
