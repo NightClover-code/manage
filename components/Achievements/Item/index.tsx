@@ -1,10 +1,14 @@
-interface ItemProps {
+interface AchievementProps {
   title: string;
   result: number;
   className?: string;
 }
 
-const Item: React.FC<ItemProps> = ({ title, result, className }) => {
+const Achievement: React.FC<AchievementProps> = ({
+  title,
+  result,
+  className,
+}) => {
   return (
     <div className={className}>
       <h2 className="text-orange">{result}</h2>
@@ -13,4 +17,4 @@ const Item: React.FC<ItemProps> = ({ title, result, className }) => {
   );
 };
 
-export default Item;
+export default Achievement;

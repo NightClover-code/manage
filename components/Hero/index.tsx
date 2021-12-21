@@ -37,8 +37,10 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
           while keeping the larger goal in view.
         </p>
         <div className="flex__center mt-10">
-          <Button className="mr-5">Download</Button>
-          <Button className="!text-blue !bg-white !px-[27px]">Register</Button>
+          <Button className="mr-5 button">Download</Button>
+          <Button className="!text-blue !bg-white !px-[27px] button">
+            Register
+          </Button>
         </div>
         <CustomImage
           className="relative w-[1066px] h-[695px] mt-10 mx-auto"

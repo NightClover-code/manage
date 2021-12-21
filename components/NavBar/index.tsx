@@ -5,7 +5,7 @@ import CustomImage from '../CustomImage';
 
 const NavBar = () => {
   return (
-    <nav className="flex__between mt-10 font-medium">
+    <nav className="flex__between mt-10 font-semibold">
       <CustomImage
         className="cursor-pointer flex__center"
         width={146}
@@ -25,7 +25,7 @@ const NavBar = () => {
       <ul className="flex__center">
         <li className="mr-2">Login</li>
         <li>
-          <Button>Sign up</Button>
+          <Button className="button">Sign up</Button>
         </li>
       </ul>
     </nav>

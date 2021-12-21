@@ -1,4 +1,4 @@
-import Item from './Item';
+import Achievement from './Item';
 
 const Achievements = () => {
   return (
@@ -12,10 +12,10 @@ const Achievements = () => {
           top-leading industries in the world.
         </p>
         <div className="grid grid-cols-4 mt-20">
-          <Item title="Years of Collaboration" result={18} />
-          <Item title="Years of Collaboration" result={18} />
-          <Item title="Years of Collaboration" result={18} />
-          <Item title="Years of Collaboration" result={18} />
+          <Achievement title="Years of Collaboration" result={18} />
+          <Achievement title="Years of Collaboration" result={18} />
+          <Achievement title="Years of Collaboration" result={18} />
+          <Achievement title="Years of Collaboration" result={18} />
         </div>
       </div>
     </section>

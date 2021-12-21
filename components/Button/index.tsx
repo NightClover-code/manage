@@ -3,7 +3,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ children, className }) => {
-  return <button className={`button ${className}`}>{children}</button>;
+  return <button className={className}>{children}</button>;
 };
 
 export default Button;

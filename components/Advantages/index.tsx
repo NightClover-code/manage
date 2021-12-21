@@ -21,7 +21,7 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
             Manage provides all the functionality your team needs, without the
             complexity.
           </p>
-          <Button className="mt-8">Learn more</Button>
+          <Button className="mt-8 button">Learn more</Button>
         </div>
         <div className="grid grid-cols-advantages grid-rows-2 gap-20">
           {advantages.map(advantage => {
