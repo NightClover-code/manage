@@ -10,3 +10,10 @@ export interface ImageInterface {
   imgWidth: number;
   imgHeight: number;
 }
+
+export interface AchievementInterface {
+  title: string;
+  result: number;
+  borderLeft: boolean;
+  resultType?: string;
+}
