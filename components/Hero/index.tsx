@@ -50,18 +50,16 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
           priority
         />
         <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20">
-          {companies.map(({ imgHeight, imgWidth, url, alt }) => {
-            return (
-              <Image
-                className={alt}
-                key={randomID()}
-                width={imgWidth}
-                height={imgHeight}
-                src={url}
-                alt={`${alt}-icon`}
-              />
-            );
-          })}
+          {companies.map(({ imgHeight, imgWidth, url, alt }) => (
+            <Image
+              className={alt}
+              key={randomID()}
+              width={imgWidth}
+              height={imgHeight}
+              src={url}
+              alt={`${alt}-icon`}
+            />
+          ))}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
-//importing components
+//importing utils
 import { v4 as randomID } from 'uuid';
+//importing components
 import { ServiceInterface } from '../../interfaces';
 import Service from './Item';
 
@@ -29,9 +30,9 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
           <span className="text-xxs font-semibold text-red ml-7">17% Off</span>
         </div>
         <div className="grid grid-cols-3 grid-rows-services items-end gap-10 mt-44">
-          {services.map(service => {
-            return <Service {...service} key={randomID()} />;
-          })}
+          {services.map(_service => (
+            <Service {..._service} key={randomID()} />
+          ))}
         </div>
       </div>
     </section>

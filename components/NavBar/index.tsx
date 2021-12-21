@@ -1,6 +1,5 @@
 //importing components
 import Button from '../Button';
-import { ChevronRightIcon } from '../Icons';
 import CustomImage from '../CustomImage';
 
 const NavBar = () => {
@@ -13,11 +12,18 @@ const NavBar = () => {
         src="/images/logo.svg"
         alt="logo"
       />
-      <ul className="flex">
+      <ul className="flex__center">
         <li>Features</li>
         <li>Pricing</li>
         <li className="flex__center">
-          Resources <ChevronRightIcon />
+          Resources{' '}
+          <CustomImage
+            className="mt-2"
+            src="/images/chevron-right.svg"
+            width={18}
+            height={18}
+            alt="chevron-right icon"
+          />
         </li>
         <li>About</li>
         <li>Blog</li>
