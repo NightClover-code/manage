@@ -39,3 +39,14 @@ export const achievementsQuery = gql`
     }
   }
 `;
+
+export const servicesQuery = gql`
+  query ServicesQuery {
+    services {
+      isSpecial
+      listItems
+      price
+      serviceType
+    }
+  }
+`;

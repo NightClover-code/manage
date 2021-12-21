@@ -37,7 +37,7 @@ module.exports = {
         advantages: 'repeat(2, minmax(0, 268px))',
       },
       gridTemplateRows: {
-        services: 'repeat(3, minmax(0, 465px))',
+        services: 'repeat(3, minmax(0, 470px))',
       },
     },
   },

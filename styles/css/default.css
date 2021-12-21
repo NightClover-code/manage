@@ -32,7 +32,7 @@ span {
 }
 
 .special {
-  @apply bg-orange text-white;
+  @apply bg-orange text-white h-[545px];
 }
 
 .special ul {

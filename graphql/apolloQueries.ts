@@ -4,6 +4,7 @@ import {
   advantagesQuery,
   companiesQuery,
   achievementsQuery,
+  servicesQuery,
 } from './graphqlQueries';
 
 export const advantagesData = client.query({
@@ -16,4 +17,8 @@ export const companiesData = client.query({
 
 export const achievementsData = client.query({
   query: achievementsQuery,
+});
+
+export const servicesData = client.query({
+  query: servicesQuery,
 });

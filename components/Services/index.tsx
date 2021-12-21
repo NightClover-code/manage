@@ -1,7 +1,13 @@
 //importing components
+import { v4 as randomID } from 'uuid';
+import { ServiceInterface } from '../../interfaces';
 import Service from './Item';
 
-const Services = () => {
+interface ServicesProps {
+  services: ServiceInterface[];
+}
+
+const Services: React.FC<ServicesProps> = ({ services }) => {
   return (
     <section className="services__section mt-44 mb-44">
       <div className="custom__container text-center">
@@ -22,10 +28,10 @@ const Services = () => {
           </div>
           <span className="text-xxs font-semibold text-red ml-7">17% Off</span>
         </div>
-        <div className="grid grid-cols-3 grid-rows-services gap-12 mt-40">
-          <Service />
-          <Service />
-          <Service />
+        <div className="grid grid-cols-3 grid-rows-services items-end gap-10 mt-44">
+          {services.map(service => {
+            return <Service {...service} key={randomID()} />;
+          })}
         </div>
       </div>
     </section>

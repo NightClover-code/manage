@@ -17,3 +17,10 @@ export interface AchievementInterface {
   borderLeft: boolean;
   resultType?: string;
 }
+
+export interface ServiceInterface {
+  serviceType: string;
+  isSpecial: boolean;
+  price: number;
+  listItems: string[];
+}

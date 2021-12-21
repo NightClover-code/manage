@@ -28,7 +28,7 @@ span {
 }
 
 .special {
-  @apply bg-orange text-white;
+  @apply bg-orange text-white h-[545px];
 
   ul {
     @apply text-white opacity-[0.85];
