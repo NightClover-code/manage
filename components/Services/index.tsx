@@ -10,7 +10,7 @@ interface ServicesProps {
 
 const Services: React.FC<ServicesProps> = ({ services }) => {
   return (
-    <section className="services__section mt-44 mb-44">
+    <section className="services__section mt-44">
       <div className="custom__container text-center">
         <h1 className="mx-auto max-w-[600px]">
           All the basics to getting work done.

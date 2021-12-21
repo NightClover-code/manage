@@ -19,6 +19,7 @@ import Hero from '../components/Hero';
 import Advantages from '../components/Advantages';
 import Achievements from '../components/Achievements';
 import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 
 interface HomePageProps {
   advantages: AdvantageInterface[];
@@ -41,6 +42,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Advantages advantages={advantages} />
         <Achievements achievements={achievements} />
         <Services services={services} />
+        <Testimonials />
       </main>
     </>
   );

@@ -17,8 +17,8 @@ const Service: React.FC<ServiceProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-center flex-col h-full bg-lightOrange rounded-[20px] shadow-service pt-10 ${
-        isSpecial ? 'special' : ''
+      className={`flex items-center flex-col h-full bg-lightOrange rounded-[20px] pt-10 ${
+        isSpecial ? 'special shadow-specialService' : 'shadow-service'
       }`}
     >
       <span className="text-[20px] font-semibold">{serviceType}</span>

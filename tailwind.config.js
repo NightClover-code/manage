@@ -31,13 +31,13 @@ module.exports = {
       boxShadow: {
         main: '0px 15px 40px rgba(249, 119, 54, 0.3)',
         service: '0px 10px 40px 0px rgba(253, 243, 232, 1)',
-        specialService: '0px 10px 40px 0px rgba(249, 119, 54, 0,8)',
+        specialService: '0px 10px 40px 0px rgba(249, 119, 54, 0.7)',
       },
       gridTemplateColumns: {
         advantages: 'repeat(2, minmax(0, 268px))',
       },
       gridTemplateRows: {
-        services: 'repeat(3, minmax(0, 470px))',
+        services: '470px',
       },
     },
   },
