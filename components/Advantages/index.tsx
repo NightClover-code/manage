@@ -25,7 +25,7 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
         </div>
         <div className="grid grid-cols-advantages grid-rows-2 gap-20">
           {advantages.map(advantage => {
-            return <Advantage key={randomID()} advantage={advantage} />;
+            return <Advantage key={randomID()} {...advantage} />;
           })}
         </div>
       </div>

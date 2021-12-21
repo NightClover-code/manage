@@ -2,17 +2,11 @@
 import { AdvantageInterface } from '../../../interfaces';
 import CustomImage from '../../CustomImage';
 
-interface AdvantageProps {
-  advantage: AdvantageInterface;
-}
-
-const Advantage: React.FC<AdvantageProps> = ({ advantage }) => {
-  const {
-    title,
-    description,
-    image: { url, imgWidth, imgHeight, alt },
-  } = advantage;
-
+const Advantage: React.FC<AdvantageInterface> = ({
+  title,
+  description,
+  image: { url, imgWidth, imgHeight, alt },
+}) => {
   return (
     <div className="advatange">
       <CustomImage

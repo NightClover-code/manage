@@ -1,6 +1,7 @@
-//importing types & components
+//importing types & utils
 import { v4 as randomID } from 'uuid';
 import { AchievementInterface } from '../../interfaces';
+//importing components
 import Achievement from './Item';
 
 interface AchievementsProps {
