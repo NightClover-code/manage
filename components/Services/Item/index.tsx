@@ -35,7 +35,7 @@ const Service: React.FC<ServiceProps> = ({
               height={15}
               alt="checkmark icon"
             />
-            <span className="mx-2">{_item}</span>
+            <span className="mx-3">{_item}</span>
           </li>
         ))}
       </ul>

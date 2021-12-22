@@ -8,6 +8,7 @@ module.exports = {
       sm: '17px',
       xs: '16px',
       xxs: '15px',
+      tiny: '14px',
     },
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],
@@ -20,8 +21,9 @@ module.exports = {
         offBlue: 'rgba(36, 45, 82, 0.85)',
         offGray: 'rgba(36, 45, 82, 0.6)',
         pink: 'rgb(255, 249, 246)',
-        darkGray: 'rgb(30, 30, 38)',
-        offWhite: 'rgba(255, 255, 255, 0.8)',
+        darkGray: 'rgba(30, 30, 38, 0.9)',
+        offWhite: 'rgba(255, 255, 255, 0.1)',
+        veryOffWhite: 'rgba(255, 255, 255, 0.5)',
         darkOverlay: 'rgba(37, 43, 70, 0.95)',
         linearOrange: 'rgba(255, 151, 99, 0.25)',
         linearWhite: 'rgba(196, 196, 196, 0)',
@@ -37,6 +39,7 @@ module.exports = {
       gridTemplateColumns: {
         advantages: 'repeat(2, minmax(0, 268px))',
         testimonials: 'repeat(3, 440px)',
+        footer: 'repeat(4, 25px)',
       },
       gridTemplateRows: {
         services: '470px',

@@ -31,10 +31,24 @@ span {
   @apply bg-orange text-white h-[545px];
 
   ul {
-    @apply text-white opacity-[0.85];
+    @apply text-white;
   }
 
   button {
     @apply bg-white text-orange;
   }
+}
+
+.white__logo {
+  svg path {
+    @apply fill-white;
+  }
+}
+
+.footer__item {
+  @apply text-veryOffWhite text-tiny py-2 max-w-[167px] leading-6;
+}
+
+.title {
+  @apply text-[18px] text-white font-medium mb-3;
 }
