@@ -1,5 +1,5 @@
-li {
-  @apply cursor-pointer mx-[22px];
+nav li {
+  @apply cursor-pointer mx-[22px] hover:opacity-60 transition-all duration-200;
 }
 
 h1,
