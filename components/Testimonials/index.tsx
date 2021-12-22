@@ -1,9 +1,11 @@
+//importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
+import Item from './Item';
 
 const Testimonials = () => {
   return (
-    <section className="bg-pink pt-32 mt-44 mb-40">
+    <section className="bg-pink pt-32 pb-40 mt-44 mb-40">
       <div className="custom__container">
         <div className="flex items-end justify-between">
           <div className="max-w-[470px]">
@@ -36,7 +38,11 @@ const Testimonials = () => {
             <Button className="button ml-20">Learn more</Button>
           </div>
         </div>
-        <div className="item mt-44">qscq</div>
+        <div className="grid grid-cols-testimonials grid-rows-testimonials mt-32 gap-10">
+          <Item />
+          <Item />
+          <Item />
+        </div>
       </div>
     </section>
   );

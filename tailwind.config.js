@@ -32,12 +32,15 @@ module.exports = {
         main: '0px 15px 40px rgba(249, 119, 54, 0.3)',
         service: '0px 10px 40px 0px rgba(253, 243, 232, 1)',
         specialService: '0px 10px 40px 0px rgba(249, 119, 54, 0.7)',
+        testimonial: '0px 10px 40px 0px rgba(0, 0, 0, 0.06)',
       },
       gridTemplateColumns: {
         advantages: 'repeat(2, minmax(0, 268px))',
+        testimonials: 'repeat(3, 440px)',
       },
       gridTemplateRows: {
         services: '470px',
+        testimonials: '320px',
       },
     },
   },
