@@ -24,6 +24,7 @@ module.exports = {
         darkGray: 'rgba(30, 30, 38, 0.9)',
         offWhite: 'rgba(255, 255, 255, 0.1)',
         veryOffWhite: 'rgba(255, 255, 255, 0.5)',
+        veryOffGray: 'rgba(196, 196, 196, 0,1)',
         darkOverlay: 'rgba(37, 43, 70, 0.95)',
         linearOrange: 'rgba(255, 151, 99, 0.25)',
         linearWhite: 'rgba(196, 196, 196, 0)',

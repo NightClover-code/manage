@@ -4,9 +4,9 @@ import { Logo } from '../Icons';
 
 const Footer = () => {
   return (
-    <footer className="bg-darkGray py-16">
+    <footer className="bg-darkGray pt-16">
       <div className="custom__container">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-36">
           <div className="flex items-start justify-between w-full">
             <div className="flex flex-col max-w-[170px] mt-[6px]">
               <Logo color="white" />
@@ -69,8 +69,8 @@ const Footer = () => {
             </div>
           </div>
           <ul className="ml-10">
-            <li className="title">Stay up to date</li>
-            <li>
+            <li className="title mx-0">Stay up to date</li>
+            <li className="mx-0">
               <form className="w-[220px] h-[40px] relative mt-6">
                 <input
                   type="email"
@@ -89,6 +89,14 @@ const Footer = () => {
               </form>
             </li>
           </ul>
+        </div>
+        <div className="border-t-[1px] border-veryOffGray border-opacity-10 flex__between py-6">
+          <p className="text-[13px] text-veryOffWhite opacity-30">
+            &copy; Copyright 2021, Manage Inc.
+          </p>
+          <p className="text-[13px] text-veryOffWhite opacity-30">
+            Terms of Use & Privacy Policy
+          </p>
         </div>
       </div>
     </footer>
