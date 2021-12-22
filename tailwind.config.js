@@ -21,7 +21,7 @@ module.exports = {
         offGray: 'rgba(36, 45, 82, 0.6)',
         pink: 'rgb(255, 249, 246)',
         darkGray: 'rgb(30, 30, 38)',
-        offWhite: 'rgba(255, 255, 255, 0.6)',
+        offWhite: 'rgba(255, 255, 255, 0.8)',
         darkOverlay: 'rgba(37, 43, 70, 0.95)',
         linearOrange: 'rgba(255, 151, 99, 0.25)',
         linearWhite: 'rgba(196, 196, 196, 0)',

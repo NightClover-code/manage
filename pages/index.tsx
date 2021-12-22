@@ -20,6 +20,7 @@ import Advantages from '../components/Advantages';
 import Achievements from '../components/Achievements';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import CTA from '../components/CTA';
 
 interface HomePageProps {
   advantages: AdvantageInterface[];
@@ -43,6 +44,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Achievements achievements={achievements} />
         <Services services={services} />
         <Testimonials />
+        <CTA />
       </main>
     </>
   );

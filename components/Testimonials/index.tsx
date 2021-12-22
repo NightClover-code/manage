@@ -5,7 +5,7 @@ import Item from './Item';
 
 const Testimonials = () => {
   return (
-    <section className="bg-pink pt-32 pb-40 mt-44 mb-40">
+    <section className="bg-pink pt-32 pb-40 mt-44">
       <div className="custom__container">
         <div className="flex items-end justify-between">
           <div className="max-w-[470px]">
