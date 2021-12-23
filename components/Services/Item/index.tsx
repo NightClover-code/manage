@@ -39,7 +39,7 @@ const Service: React.FC<ServiceProps> = ({
           </li>
         ))}
       </ul>
-      <Button className="text-orange font-bold w-[85%] border-2 rounded-full border-orange py-[10px] mt-auto mb-8">
+      <Button className="text-orange font-bold w-[85%] border-[2px] rounded-full border-orange py-[12px] mt-auto mb-8">
         Get Started
       </Button>
     </div>

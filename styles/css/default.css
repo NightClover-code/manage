@@ -2,8 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-nav li {
-  @apply cursor-pointer mx-[22px] hover:opacity-60 transition-all duration-200;
+nav .list__item {
+  @apply relative cursor-pointer mx-[22px] leading-6 transition-all duration-300 after:absolute after:left-[50%] after:bottom-[-3px] after:translate-x-[-50%] after:scale-x-0 after:h-[1.75px] after:bg-blue after:transition-all after:duration-300 after:w-[96%] hover:after:translate-x-[-50%] hover:after:scale-100 hover:text-orange hover:after:bg-orange;
+}
+
+nav .list__item svg path {
+  @apply transition-all duration-300;
+}
+
+nav .list__item:hover svg path {
+  @apply fill-orange;
 }
 
 h1,
