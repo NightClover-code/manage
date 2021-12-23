@@ -24,3 +24,10 @@ export interface ServiceInterface {
   price: number;
   listItems: string[];
 }
+
+export interface TestimonialInterface {
+  name: string;
+  content: string;
+  avatar: ImageInterface;
+  company: ImageInterface;
+}

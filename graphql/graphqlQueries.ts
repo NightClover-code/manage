@@ -50,3 +50,20 @@ export const servicesQuery = gql`
     }
   }
 `;
+
+export const testimonialsQuery = gql`
+  query TestimonialsQuery {
+    testimonials {
+      avatar {
+        alt
+        url
+      }
+      company {
+        alt
+        url
+      }
+      content
+      name
+    }
+  }
+`;

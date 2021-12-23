@@ -1,9 +1,16 @@
+//importing types & utils
+import { v4 as randomID } from 'uuid';
+import { TestimonialInterface } from '../../interfaces';
 //importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
 import Item from './Item';
 
-const Testimonials = () => {
+interface TestimonialsProps {
+  testimonials: TestimonialInterface[];
+}
+
+const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
     <section className="bg-pink pt-32 pb-40 mt-44">
       <div className="custom__container">
@@ -39,9 +46,9 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="grid grid-cols-testimonials grid-rows-testimonials mt-32 gap-10">
-          <Item />
-          <Item />
-          <Item />
+          {testimonials.map(_testimonial => (
+            <Item key={randomID()} {..._testimonial} />
+          ))}
         </div>
       </div>
     </section>

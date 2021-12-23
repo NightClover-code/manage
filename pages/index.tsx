@@ -6,12 +6,14 @@ import {
   AdvantageInterface,
   ImageInterface,
   ServiceInterface,
+  TestimonialInterface,
 } from '../interfaces';
 import {
   achievementsData,
   advantagesData,
   companiesData,
   servicesData,
+  testimonialsData,
 } from '../graphql';
 //importing components
 import SEO from '../components/SEO';
@@ -27,6 +29,7 @@ interface HomePageProps {
   companies: ImageInterface[];
   achievements: AchievementInterface[];
   services: ServiceInterface[];
+  testimonials: TestimonialInterface[];
 }
 
 const HomePage: NextPage<HomePageProps> = ({
@@ -34,6 +37,7 @@ const HomePage: NextPage<HomePageProps> = ({
   companies,
   achievements,
   services,
+  testimonials,
 }) => {
   return (
     <>
@@ -43,7 +47,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Advantages advantages={advantages} />
         <Achievements achievements={achievements} />
         <Services services={services} />
-        <Testimonials />
+        <Testimonials testimonials={testimonials} />
         <CTA />
       </main>
     </>
@@ -56,6 +60,7 @@ export const getStaticProps: GetStaticProps = async () => {
     companiesData,
     achievementsData,
     servicesData,
+    testimonialsData,
   ]);
 
   const data = responses.map(res => res.data);
@@ -66,6 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
       companies: data[1].assets,
       achievements: data[2].achievements,
       services: data[3].services,
+      testimonials: data[4].testimonials,
     },
   };
 };
