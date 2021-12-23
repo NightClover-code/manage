@@ -18,7 +18,7 @@ const Item: React.FC<TestimonialInterface> = ({
           layout="fill"
           alt={avatar.alt}
           objectFit="cover"
-          objectPosition={'0 40%'}
+          objectPosition={avatar.position && avatar.position}
         />
         <h3 className="text-[20px] font-bold">{name}</h3>
       </div>

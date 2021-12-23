@@ -45,7 +45,12 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
             <Button className="button ml-20">Learn more</Button>
           </div>
         </div>
-        <div className="grid grid-cols-testimonials grid-rows-testimonials mt-32 gap-10">
+        <div
+          className="grid grid-rows-testimonials mt-32 gap-10"
+          style={{
+            gridTemplateColumns: `repeat(${testimonials.length}, 440px)`,
+          }}
+        >
           {testimonials.map(_testimonial => (
             <Item key={randomID()} {..._testimonial} />
           ))}

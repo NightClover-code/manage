@@ -57,6 +57,7 @@ export const testimonialsQuery = gql`
       avatar {
         alt
         url
+        position
       }
       company {
         alt

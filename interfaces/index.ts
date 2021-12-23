@@ -9,6 +9,7 @@ export interface ImageInterface {
   alt: string;
   imgWidth: number;
   imgHeight: number;
+  position?: string;
 }
 
 export interface AchievementInterface {
