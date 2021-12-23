@@ -17,30 +17,30 @@ const Footer = () => {
                 <CustomImage
                   className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
                   src="/images/twitter.svg"
-                  width={10}
-                  height={8}
+                  width={12}
+                  height={11}
                   alt="twitter"
                 />
                 <CustomImage
                   className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/twitter.svg"
-                  width={10}
-                  height={8}
-                  alt="twitter"
+                  src="/images/instagram.svg"
+                  width={12}
+                  height={11}
+                  alt="instagram"
                 />
                 <CustomImage
                   className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/twitter.svg"
-                  width={10}
-                  height={8}
-                  alt="twitter"
+                  src="/images/youtube.svg"
+                  width={12}
+                  height={11}
+                  alt="youtube"
                 />
                 <CustomImage
                   className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/twitter.svg"
-                  width={10}
-                  height={8}
-                  alt="twitter"
+                  src="/images/dribbble.svg"
+                  width={12}
+                  height={11}
+                  alt="dribbble"
                 />
               </div>
             </div>
