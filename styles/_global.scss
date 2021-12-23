@@ -22,7 +22,7 @@ p {
 }
 
 .button {
-  @apply bg-orange text-white px-[22px] py-[10px] rounded-[8px] shadow-main border-none outline-none font-bold text-[16px];
+  @apply bg-orange text-white px-[22px] py-[8px] rounded-[8px] border-2 border-orange shadow-main outline-none font-bold text-[16px] relative hover:bg-white hover:text-orange transition-all duration-300;
 }
 
 .amazon {
