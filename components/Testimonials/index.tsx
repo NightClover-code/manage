@@ -28,14 +28,14 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
           <div className="flex items-center">
             <div className="flex">
               <CustomImage
-                className="flex__center bg-white w-10 h-10 rounded-full cursor-pointer"
+                className="flex__center bg-white w-10 h-10 rounded-full cursor-pointer shadow-arrow"
                 src="/images/arrow-left.svg"
                 width={24}
                 height={24}
                 alt="arrow-left icon"
               />
               <CustomImage
-                className="flex__center bg-orange w-10 h-10 rounded-full ml-5 cursor-pointer"
+                className="flex__center bg-orange w-10 h-10 rounded-full ml-5 cursor-pointer shadow-arrow"
                 src="/images/arrow-right.svg"
                 width={24}
                 height={24}
@@ -48,7 +48,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         <div
           className="grid grid-rows-testimonials mt-32 gap-10"
           style={{
-            gridTemplateColumns: `repeat(${testimonials.length}, 440px)`,
+            gridTemplateColumns: `repeat(${testimonials.length}, 430px)`,
           }}
         >
           {testimonials.map(_testimonial => (
