@@ -33,7 +33,7 @@ module.exports = {
         solidGray: 'rgba(209, 204, 197, 0.8)',
       },
       boxShadow: {
-        main: '0px 15px 40px rgba(249, 119, 54, 0)',
+        main: '0px 15px 40px rgba(249, 119, 54, 0.25)',
         service: '0px 10px 40px 0px rgba(253, 243, 232, 1)',
         specialService: '0px 10px 40px 0px rgba(249, 119, 54, 0.7)',
         testimonial: '0px 10px 40px 0px rgba(0, 0, 0, 0.05)',
@@ -46,6 +46,9 @@ module.exports = {
       gridTemplateRows: {
         services: '470px',
         testimonials: '320px',
+      },
+      transitionDuration: {
+        250: '250ms',
       },
     },
   },

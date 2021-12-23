@@ -46,6 +46,7 @@ export const Logo: React.FC<LogoProps> = ({ color = '#213F70', className }) => {
 
 export const ChevronDownIcon = () => (
   <svg
+    className="mt-1"
     width="18"
     height="18"
     viewBox="0 0 18 18"

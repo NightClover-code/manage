@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
         </p>
         <div className="flex__center mt-10">
           <Button className="mr-5 button">Download</Button>
-          <Button className="!text-blue !bg-white !px-[27px] button !border-none !py-[10px] hover:!text-orange">
+          <Button className="relative !text-blue !bg-white !px-7 button">
             Register
           </Button>
         </div>

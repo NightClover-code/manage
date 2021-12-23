@@ -16,7 +16,7 @@ const NavBar = () => {
         <li className="list__item">Blog</li>
       </ul>
       <ul className="flex__center">
-        <li className="mr-7 list__item">Login</li>
+        <li className="!mr-6 list__item">Login</li>
         <li className="!mx-0">
           <Button className="button">Sign up</Button>
         </li>
