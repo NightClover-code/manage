@@ -14,9 +14,7 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
     <section className="mt-52 mb-20">
       <div className="custom__container flex items-start justify-between">
         <div className="max-w-[380px]">
-          <h2 className="text-[45px] mt-0">
-            What&apos;s different about Manage?
-          </h2>
+          <h2 className="text-[45px]">What&apos;s different about Manage?</h2>
           <p className="mt-5">
             Manage provides all the functionality your team needs, without the
             complexity.

@@ -1,6 +1,10 @@
+//importing components
+import { v4 as randomID } from 'uuid';
 import Button from '../Button';
 import CustomImage from '../CustomImage';
 import { Logo } from '../Icons';
+
+const icons = ['twitter', 'instagram', 'youtube', 'dribbble'];
 
 const Footer = () => {
   return (
@@ -14,34 +18,15 @@ const Footer = () => {
                 Bring everyone together to build better products
               </p>
               <div className="grid grid-cols-footer gap-2 mt-5">
-                <CustomImage
-                  className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/twitter.svg"
-                  width={12}
-                  height={11}
-                  alt="twitter"
-                />
-                <CustomImage
-                  className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/instagram.svg"
-                  width={12}
-                  height={11}
-                  alt="instagram"
-                />
-                <CustomImage
-                  className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/youtube.svg"
-                  width={12}
-                  height={11}
-                  alt="youtube"
-                />
-                <CustomImage
-                  className="w-6 h-6 bg-white rounded-full flex__center cursor-pointer"
-                  src="/images/dribbble.svg"
-                  width={12}
-                  height={11}
-                  alt="dribbble"
-                />
+                {icons.map(_icon => (
+                  <CustomImage
+                    key={randomID()}
+                    src={`/images/${_icon}.svg`}
+                    width={12}
+                    height={11}
+                    alt={_icon}
+                  />
+                ))}
               </div>
             </div>
             <div className="flex">

@@ -10,7 +10,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
 }) => {
   return (
     <div className={className}>
-      {/* eslint-disable-next-line jsx-a11y/alt-text*/}
+      {/* eslint-disable-next-line jsx-a11y/alt-text */}
       <Image {...props} />
     </div>
   );
