@@ -13,6 +13,10 @@ module.exports = {
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],
     },
+    screens: {
+      xl: { max: '980px' },
+      lg: { max: '840px' },
+    },
     extend: {
       colors: {
         red: 'rgba(235, 87, 87, 1)',
