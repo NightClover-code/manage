@@ -16,8 +16,8 @@ const Advantage: React.FC<AdvantageInterface> = ({
         height={imgHeight}
         alt={`${alt}-icon`}
       />
-      <h2 className="text-[29px] mt-2">{title}</h2>
-      <p className="mt-1">{description}</p>
+      <h2 className="text-[29px] mt-7 mb-5 leading-8">{title}</h2>
+      <p className="mt-1 xs:max-w-[300px]">{description}</p>
     </div>
   );
 };

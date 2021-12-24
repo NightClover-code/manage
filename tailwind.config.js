@@ -25,6 +25,7 @@ module.exports = {
       mockup4: { max: '700px' },
       mockup5: { max: '600px' },
       mockup6: { max: '500px' },
+      1100: { max: '1100px' },
     },
     extend: {
       colors: {
@@ -55,6 +56,8 @@ module.exports = {
       gridTemplateColumns: {
         advantages: 'repeat(2, minmax(0, 268px))',
         footer: 'repeat(4, 25px)',
+        advantagesRes: '340px',
+        advantagesRes2: '300px',
       },
       gridTemplateRows: {
         services: '470px',

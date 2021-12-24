@@ -64,7 +64,7 @@ span {
 }
 
 .custom__container {
-  @apply w-10/12 mx-auto;
+  @apply w-[85%] mx-auto;
 }
 
 .app__container {
