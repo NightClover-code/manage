@@ -14,8 +14,17 @@ module.exports = {
       mulish: ['Mulish', 'sans-serif'],
     },
     screens: {
+      xxl: { max: '1300px' },
       xl: { max: '980px' },
       lg: { max: '840px' },
+      sm: { max: '750px' },
+      xs: { max: '500px' },
+      mockup: { max: '1200px' },
+      mockup2: { max: '950px' },
+      mockup3: { max: '800px' },
+      mockup4: { max: '700px' },
+      mockup5: { max: '600px' },
+      mockup6: { max: '500px' },
     },
     extend: {
       colors: {
