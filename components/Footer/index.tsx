@@ -8,9 +8,9 @@ const icons = ['twitter', 'instagram', 'youtube', 'dribbble'];
 
 const Footer = () => {
   return (
-    <footer className="bg-darkGray pt-16">
+    <footer className="bg-darkGray pt-14">
       <div className="custom__container">
-        <div className="flex justify-between mb-36">
+        <div className="flex justify-between mb-32">
           <div className="flex items-start justify-between w-full">
             <div className="flex flex-col max-w-[170px] mt-[6px]">
               <Logo color="white" />
@@ -36,14 +36,14 @@ const Footer = () => {
                 <li className="footer__item">Task Assigning</li>
                 <li className="footer__item">Sales Tracking</li>
               </ul>
-              <ul className="ml-20">
+              <ul className="ml-28">
                 <li className="title">Company</li>
                 <li className="footer__item">About</li>
                 <li className="footer__item">Leadership</li>
                 <li className="footer__item">Customers</li>
                 <li className="footer__item">Career</li>
               </ul>
-              <ul className="ml-20">
+              <ul className="ml-28">
                 <li className="title">Support</li>
                 <li className="footer__item">info@manage.com</li>
                 <li className="footer__item">1-882-615-198</li>
@@ -53,7 +53,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <ul className="ml-10">
+          <ul className="ml-20">
             <li className="title mx-0">Stay up to date</li>
             <li className="mx-0">
               <form className="w-[220px] h-[40px] relative mt-6">
@@ -76,10 +76,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="border-t-[1px] border-veryOffGray border-opacity-10 flex__between py-6">
-          <p className="text-[13px] text-veryOffWhite opacity-30">
+          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-80 cursor-pointer">
             &copy; Copyright 2021, Manage Inc.
           </p>
-          <p className="text-[13px] text-veryOffWhite opacity-30">
+          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-80 cursor-pointer">
             Terms of Use & Privacy Policy
           </p>
         </div>

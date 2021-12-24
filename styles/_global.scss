@@ -47,7 +47,7 @@ span {
 }
 
 .footer__item {
-  @apply text-veryOffWhite text-tiny py-2 max-w-[167px] leading-6;
+  @apply text-veryOffWhite text-tiny my-5 max-w-[167px] leading-6 cursor-pointer hover:text-orange transition__250;
 }
 
 .title {

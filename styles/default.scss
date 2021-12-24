@@ -35,3 +35,7 @@
 .flex__between {
   @apply flex items-center justify-between;
 }
+
+.transition__250 {
+  @apply transition-all duration-250 ease-in-out;
+}
