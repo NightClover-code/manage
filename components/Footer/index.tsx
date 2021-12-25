@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer className="bg-darkGray pt-14">
       <div className="custom__container">
-        <div className="flex justify-between mb-32">
-          <div className="flex items-start justify-between w-full">
-            <div className="flex flex-col max-w-[170px] mt-[6px]">
+        <div className="flex justify-between mb-32 mockup:flex-col mockup:mb-16">
+          <div className="flex items-start justify-between w-full xl:flex-col">
+            <div className="flex flex-col max-w-[170px] mt-[6px] sm:mt-3">
               <Logo color="white" />
               <p className="text-tiny text-veryOffWhite leading-6 mt-4">
                 Bring everyone together to build better products
@@ -30,21 +30,21 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="flex">
+            <div className="flex xl:mt-16 mockup5:flex-col">
               <ul>
                 <li className="title">Solution</li>
                 <li className="footer__item">Project Management</li>
                 <li className="footer__item">Task Assigning</li>
                 <li className="footer__item">Sales Tracking</li>
               </ul>
-              <ul className="ml-28">
+              <ul className="ml-28 xxl:ml-20 mockup5:ml-0 mockup5:mt-10">
                 <li className="title">Company</li>
                 <li className="footer__item">About</li>
                 <li className="footer__item">Leadership</li>
                 <li className="footer__item">Customers</li>
                 <li className="footer__item">Career</li>
               </ul>
-              <ul className="ml-28">
+              <ul className="ml-28 xxl:ml-20 mockup5:ml-0 mockup5:mt-10">
                 <li className="title">Support</li>
                 <li className="footer__item">info@manage.com</li>
                 <li className="footer__item">1-882-615-198</li>
@@ -54,7 +54,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <ul className="ml-20">
+          <ul className="ml-20 mockup:ml-0 mockup:mt-10">
             <li className="title mx-0">Stay up to date</li>
             <li className="mx-0">
               <form className="w-[220px] h-[40px] relative mt-6">
@@ -77,10 +77,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="border-t-[1px] border-veryOffGray border-opacity-10 flex__between py-6">
-          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
+          <p className="text-[13px] sm:text-[11px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
             &copy; Copyright 2021, Manage Inc.
           </p>
-          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
+          <p className="text-[13px] sm:text-[11px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
             Terms of Use & Privacy Policy
           </p>
         </div>
