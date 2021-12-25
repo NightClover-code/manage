@@ -11,7 +11,7 @@ const Achievement: React.FC<AchievementInterface> = ({
     <div
       className={`p-2 lg:border-l-0 border-solidGray ${
         borderLeft && 'border-l-[1px]'
-      } sm:p-12 ${borderBottom && 'xs:border-b-[1px]'}`}
+      } xs:p-12 ${borderBottom && 'xs:border-b-[1px]'}`}
     >
       <h2 className="text-orange text-[45px] mockup2:text-[40px] lg:!text-[45px]">
         {result}

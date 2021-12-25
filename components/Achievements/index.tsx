@@ -10,7 +10,7 @@ interface AchievementsProps {
 
 const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
   return (
-    <section className="mt-36 bg-pink py-20 sm:mt-24 sm:pb-10">
+    <section className="mt-32 lg:mt-24 bg-pink py-20 sm:pb-10">
       <div className="custom__container text-center overflow-hidden">
         <h1 className="mx-auto">
           They really like <span className="text-orange">Manage.</span>
@@ -19,7 +19,7 @@ const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
           We have been trusted and offered the right to collaborate with
           top-leading industries in the world.
         </p>
-        <div className="grid grid-cols-4 mt-20 lg:mt-10 lg:grid-cols-2 lg:gap-10 xs:grid-cols-[80%] xs:justify-center xs:gap-0">
+        <div className="grid grid-cols-4 mt-20 sm:mt-16 xs:mt-5 lg:grid-cols-2 lg:gap-10 xs:grid-cols-[80%] xs:justify-center xs:gap-0">
           {achievements.map(achievement => {
             return <Achievement {...achievement} key={randomID()} />;
           })}

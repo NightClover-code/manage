@@ -10,7 +10,7 @@ interface ServicesProps {
 
 const Services: React.FC<ServicesProps> = ({ services }) => {
   return (
-    <section className="mt-44">
+    <section className="mt-28">
       <div className="custom__container text-center">
         <h1 className="mx-auto max-w-[600px]">
           All the basics to getting work done.
@@ -19,17 +19,23 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
           We provide several plans for you to choose from, pick the most
           suitable for your business.
         </p>
-        <div className="flex__center mt-7 ml-20">
+        <div className="flex__center mt-7 ml-20 sm:ml-10 xs:ml-5">
           <div className="flex items-center">
-            <span className="text-xs font-semibold">Bill monthly</span>
-            <div className="flex items-center w-[36px] h-[18px] bg-orange mx-6 rounded-[10px] cursor-pointer">
+            <span className="text-xs font-semibold xs:text-xxs">
+              Bill monthly
+            </span>
+            <div className="flex items-center w-[36px] h-[18px] bg-orange mx-6 rounded-[10px] cursor-pointer xs:text-xs xs:mx-3">
               <div className="block w-[13px] h-[13px] bg-white rounded-[10px] ml-1"></div>
             </div>
-            <span className="text-xs font-semibold">Bill annualy</span>
+            <span className="text-xs font-semibold xs:text-xxs">
+              Bill annualy
+            </span>
           </div>
-          <span className="text-xxs font-semibold text-red ml-7">17% Off</span>
+          <span className="text-xxs font-semibold text-red ml-7 xs:ml-5">
+            17% Off
+          </span>
         </div>
-        <div className="grid grid-cols-3 grid-rows-services items-end gap-10 mt-44">
+        <div className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-40 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0">
           {services.map(_service => (
             <Service {..._service} key={randomID()} />
           ))}

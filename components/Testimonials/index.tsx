@@ -12,7 +12,7 @@ interface TestimonialsProps {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
-    <section className="bg-pink pt-32 pb-40 mt-44">
+    <section className="bg-pink py-32 mt-32">
       <div className="custom__container">
         <div className="flex items-end justify-between">
           <div className="max-w-[470px]">

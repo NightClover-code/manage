@@ -17,8 +17,10 @@ const Service: React.FC<ServiceProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-center flex-col h-full bg-lightOrange rounded-[20px] pt-10 ${
-        isSpecial ? 'special shadow-specialService' : 'shadow-service'
+      className={`flex items-center flex-col h-full bg-lightOrange rounded-[20px] pt-10 px-8 ${
+        isSpecial
+          ? 'special shadow-specialService mockup2:row-start-2 mockup2:col-span-2 sm:!col-span-1 sm:!row-start-auto sm:!w-full mockup2:w-[420px] mockup2:mx-auto'
+          : 'shadow-service sm:h-[470px]'
       }`}
     >
       <span className="text-[20px] font-semibold">{serviceType}</span>
@@ -39,7 +41,7 @@ const Service: React.FC<ServiceProps> = ({
           </li>
         ))}
       </ul>
-      <Button className="text-orange font-bold w-[85%] border-[2px] rounded-full border-orange py-[12px] mt-auto mb-8">
+      <Button className="text-orange font-bold w-full border-[2px] rounded-full border-orange py-[12px] mt-auto mb-8">
         Get Started
       </Button>
     </div>
