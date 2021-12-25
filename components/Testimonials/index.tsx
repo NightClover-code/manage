@@ -12,7 +12,7 @@ interface TestimonialsProps {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
-    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24">
+    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24">
       <div className="custom__container">
         <div className="flex items-end justify-between mockup5:flex-col mockup5:justify-start">
           <div className="max-w-[470px] mockup2:max-w-[440px] sm:!max-w-[360px] mockup5:!max-w-full">
@@ -47,7 +47,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
             </Button>
           </div>
         </div>
-        <div className="grid grid-rows-testimonials mt-24 gap-10 grid-cols-testimonials sm:grid-cols-testimonialsRes sm:grid-rows-auto">
+        <div className="grid grid-rows-testimonials mt-24 sm:mt-20 gap-10 grid-cols-testimonials sm:grid-cols-testimonialsRes sm:grid-rows-auto">
           {testimonials.map(_testimonial => (
             <Item key={randomID()} {..._testimonial} />
           ))}
