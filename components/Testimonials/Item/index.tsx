@@ -10,7 +10,7 @@ const Item: React.FC<TestimonialInterface> = ({
   name,
 }) => {
   return (
-    <div className="bg-white flex flex-col px-11 py-8 shadow-testimonial">
+    <div className="bg-white flex flex-col px-11 py-8 shadow-testimonial sm:px-8">
       <div className="flex items-center">
         <CustomImage
           className="overflow-hidden w-12 h-12 relative rounded-full mr-4 shadow-testimonial"
@@ -22,10 +22,10 @@ const Item: React.FC<TestimonialInterface> = ({
         />
         <h3 className="text-[20px] font-bold">{name}</h3>
       </div>
-      <p className="text-sm mt-5 max-w-[360px]">{content}</p>
+      <p className="text-sm mt-5 max-w-[360px] sm:mb-3">{content}</p>
       <div className="flex__between mt-auto">
         <CustomImage
-          className="w-[122px] h-[37px] relative"
+          className="w-[122px] h-[37px] sm:w-[100px] sm:h-[30px] relative"
           src={company.url}
           alt={company.alt}
           layout="fill"

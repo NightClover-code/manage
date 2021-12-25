@@ -58,10 +58,13 @@ module.exports = {
         footer: 'repeat(4, 25px)',
         advantagesRes: '340px',
         advantagesRes2: '300px',
+        testimonials: 'repeat(4, 470px)',
+        testimonialsRes: 'repeat(4, 100%)',
       },
       gridTemplateRows: {
         services: '470px',
         testimonials: '320px',
+        auto: 'auto',
       },
       transitionDuration: {
         250: '250ms',

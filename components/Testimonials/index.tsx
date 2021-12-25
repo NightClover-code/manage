@@ -12,20 +12,20 @@ interface TestimonialsProps {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
-    <section className="bg-pink py-32 mt-32">
+    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24">
       <div className="custom__container">
-        <div className="flex items-end justify-between">
-          <div className="max-w-[470px]">
+        <div className="flex items-end justify-between mockup5:flex-col mockup5:justify-start">
+          <div className="max-w-[470px] mockup2:max-w-[440px] sm:!max-w-[360px] mockup5:!max-w-full">
             <h1>
               Join <span className="text-orange">350M+</span> users around the
               world.
             </h1>
-            <p className="mt-6">
+            <p className="mt-6 sm:max-w-[350px]">
               We provide several plans for you to choose from, pick the most
               suitable for your business.
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center lg:flex-col lg:items-end mockup5:flex-row mockup5:justify-between mockup5:w-full mockup5:mt-5">
             <div className="flex">
               <CustomImage
                 className="flex__center bg-white w-10 h-10 rounded-full cursor-pointer shadow-arrow"
@@ -42,15 +42,12 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                 alt="arrow-right icon"
               />
             </div>
-            <Button className="button ml-20">Learn more</Button>
+            <Button className="button ml-16 mockup2:ml-6 lg:mt-5 sm:ml-0">
+              Learn more
+            </Button>
           </div>
         </div>
-        <div
-          className="grid grid-rows-testimonials mt-32 gap-10"
-          style={{
-            gridTemplateColumns: `repeat(${testimonials.length}, 430px)`,
-          }}
-        >
+        <div className="grid grid-rows-testimonials mt-24 gap-10 grid-cols-testimonials sm:grid-cols-testimonialsRes sm:grid-rows-auto">
           {testimonials.map(_testimonial => (
             <Item key={randomID()} {..._testimonial} />
           ))}
