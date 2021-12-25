@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
           alt="mockup"
           priority
         />
-        <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20 xl:gap-10 lg:gap-5 xs:mt-0">
+        <div className="grid grid-cols-5 gap-20 items-center mt-10 xl:gap-10 lg:gap-5 xs:mt-0">
           {companies.map(({ imgHeight, imgWidth, url, alt }) => (
             <Image
               className={alt}

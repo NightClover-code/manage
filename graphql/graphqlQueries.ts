@@ -36,6 +36,7 @@ export const achievementsQuery = gql`
       result
       resultType
       borderLeft
+      borderBottom
     }
   }
 `;

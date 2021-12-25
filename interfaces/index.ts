@@ -16,6 +16,7 @@ export interface AchievementInterface {
   title: string;
   result: number;
   borderLeft: boolean;
+  borderBottom: boolean;
   resultType?: string;
 }
 
