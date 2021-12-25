@@ -4,7 +4,7 @@ nav .list__item {
 
 h1,
 h2 {
-  @apply text-[50px] font-bold max-w-[700px] leading-[60px];
+  @apply text-[50px] font-bold max-w-[700px] leading-[60px] xl:text-[48px] sm:text-[42px] sm:leading-[46px];
 }
 
 p {

@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
           height={150}
           alt="calendar-icon"
         />
-        <h1 className="mx-auto pt-52 text-center xl:text-[48px] sm:text-[42px] sm:leading-[46px]">
+        <h1 className="mx-auto pt-52 text-center">
           Manage projects properly. <span className="text-orange">Plan</span>{' '}
           with purpose.
         </h1>
@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
           alt="mockup"
           priority
         />
-        <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20 xl:gap-10 lg:gap-5 sm:mt-0">
+        <div className="grid grid-cols-5 gap-20 items-center mt-10 mb-20 xl:gap-10 lg:gap-5 xs:mt-0">
           {companies.map(({ imgHeight, imgWidth, url, alt }) => (
             <Image
               className={alt}

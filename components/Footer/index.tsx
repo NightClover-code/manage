@@ -20,6 +20,7 @@ const Footer = () => {
               <div className="grid grid-cols-footer gap-2 mt-5">
                 {icons.map(_icon => (
                   <CustomImage
+                    className="rounded-full bg-white w-6 h-6 flex__center cursor-pointer"
                     key={randomID()}
                     src={`/images/${_icon}.svg`}
                     width={12}
@@ -76,10 +77,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="border-t-[1px] border-veryOffGray border-opacity-10 flex__between py-6">
-          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-80 cursor-pointer">
+          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
             &copy; Copyright 2021, Manage Inc.
           </p>
-          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-80 cursor-pointer">
+          <p className="text-[13px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
             Terms of Use & Privacy Policy
           </p>
         </div>
