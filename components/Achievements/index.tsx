@@ -10,7 +10,7 @@ interface AchievementsProps {
 
 const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
   return (
-    <section className="mt-32 lg:mt-24 bg-pink py-20 sm:pb-10">
+    <section className="mt-28 lg:mt-24 bg-pink py-20 sm:pb-10">
       <div className="custom__container text-center overflow-hidden">
         <h1 className="mx-auto">
           They really like <span className="text-orange">Manage.</span>
