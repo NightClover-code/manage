@@ -1,4 +1,5 @@
 //importing components
+import { v4 as randomID } from 'uuid';
 import Button from '../Button';
 import CustomImage from '../CustomImage';
 import {
@@ -8,6 +9,8 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from '../Icons';
+
+const icons = [TwitterIcon, YoutubeIcon, InstagramIcon, DribbleIcon];
 
 const Footer = () => {
   return (
@@ -21,18 +24,14 @@ const Footer = () => {
                 Bring everyone together to build better products
               </p>
               <div className="grid grid-cols-footer gap-2 mt-5">
-                <div className="flex__center bg-white w-6 h-6 rounded-full cursor-pointer shadow-arrow hover:bg-orange transition__250 footer__icon">
-                  <TwitterIcon />
-                </div>
-                <div className="flex__center bg-white w-6 h-6 rounded-full cursor-pointer shadow-arrow hover:bg-orange transition__250 footer__icon">
-                  <YoutubeIcon />
-                </div>
-                <div className="flex__center bg-white w-6 h-6 rounded-full cursor-pointer shadow-arrow  hover:bg-orange transition__250 footer__icon">
-                  <InstagramIcon />
-                </div>
-                <div className="flex__center bg-white w-6 h-6 rounded-full cursor-pointer shadow-arrow hover:bg-orange transition__250 footer__icon">
-                  <DribbleIcon />
-                </div>
+                {icons.map(Icon => (
+                  <div
+                    key={randomID()}
+                    className="flex__center bg-white w-6 h-6 rounded-full cursor-pointer shadow-arrow hover:bg-orange transition__250 footer__icon"
+                  >
+                    <Icon />
+                  </div>
+                ))}
               </div>
             </div>
             <div className="flex xl:mt-16 mockup5:flex-col">
