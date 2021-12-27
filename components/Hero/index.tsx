@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
         </p>
         <div className="flex__center mt-10">
           <Button className="mr-5 button">Download</Button>
-          <Button className="relative !text-blue !bg-white !px-7 button after:hidden hover:opacity-70">
+          <Button className="relative !text-blue !bg-white !px-7 button button__overlay transition__250 hover:after:!opacity-5">
             Register
           </Button>
         </div>

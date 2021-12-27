@@ -28,14 +28,14 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
           <div className="flex items-center lg:flex-col lg:items-end mockup5:flex-row mockup5:justify-between mockup5:w-full mockup5:mt-5">
             <div className="flex">
               <CustomImage
-                className="flex__center bg-white w-10 h-10 rounded-full cursor-pointer shadow-arrow"
+                className="flex__center bg-white w-10 h-10 rounded-full cursor-pointer shadow-arrow relative button__overlay transition__250 after:rounded-full hover:after:!opacity-5"
                 src="/images/arrow-left.svg"
                 width={24}
                 height={24}
                 alt="arrow-left icon"
               />
               <CustomImage
-                className="flex__center bg-orange w-10 h-10 rounded-full ml-4 cursor-pointer shadow-arrow"
+                className="flex__center bg-orange w-10 h-10 rounded-full ml-4 cursor-pointer shadow-arrow relative button__overlay transition__250 after:rounded-full"
                 src="/images/arrow-right.svg"
                 width={24}
                 height={24}

@@ -57,8 +57,10 @@ span {
   @apply text-[18px] text-white font-medium mb-3;
 }
 
-.list__item {
-  .special-svg {
+.list__item,
+.footer__icon {
+  .special-svg,
+  .footer-svg {
     path {
       @apply transition__250;
     }
@@ -68,6 +70,11 @@ span {
     .special-svg {
       path {
         @apply fill-orange;
+      }
+    }
+    .footer-svg {
+      path {
+        @apply fill-white;
       }
     }
   }

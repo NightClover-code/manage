@@ -8,7 +8,7 @@ const CTA = () => {
         <p className="text-offWhite my-7 mx-auto sm:max-w-[280px]">
           Save time. Have everything in one place.
         </p>
-        <Button className="button !text-orange !bg-white !px-8 !py-3">
+        <Button className="button !text-orange !bg-white !px-8 !py-3 relative button__overlay transition__250 hover:after:!opacity-5">
           Get Started
         </Button>
       </div>

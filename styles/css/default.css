@@ -59,12 +59,21 @@ span {
   @apply text-[18px] text-white font-medium mb-3;
 }
 
-.list__item .special-svg path {
+.list__item .special-svg path,
+.list__item .footer-svg path,
+.footer__icon .special-svg path,
+.footer__icon .footer-svg path {
   @apply transition__250;
 }
 
-.list__item:hover .special-svg path {
+.list__item:hover .special-svg path,
+.footer__icon:hover .special-svg path {
   @apply fill-orange;
+}
+
+.list__item:hover .footer-svg path,
+.footer__icon:hover .footer-svg path {
+  @apply fill-white;
 }
 
 * {
