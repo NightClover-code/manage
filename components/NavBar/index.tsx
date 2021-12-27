@@ -9,11 +9,11 @@ const NavBar = () => {
       <Logo className="mt-2" />
       <ul className="flex__center lg:hidden">
         <li className="list__item">Features</li>
-        <li className="list__item">Pricing</li>
-        <li className="flex__center list__item !mr-2">
-          Resources <ChevronDownIcon />
-        </li>
         <li className="list__item">About</li>
+        <li className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange">
+          Services <ChevronDownIcon />
+        </li>
+        <li className="list__item">Testimonials</li>
       </ul>
       <ul className="flex__center lg:hidden">
         <li className="!mr-6 list__item">Login</li>

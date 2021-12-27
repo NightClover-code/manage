@@ -22,7 +22,7 @@ const Item: React.FC<TestimonialInterface> = ({
         />
         <h3 className="text-[20px] font-bold">{name}</h3>
       </div>
-      <p className="text-sm mt-5 max-w-[360px] sm:mb-3">{content}</p>
+      <p className="text-sm mt-5 max-w-[360px] sm:mb-8">{content}</p>
       <div className="flex__between mt-auto">
         <CustomImage
           className="w-[122px] h-[37px] sm:w-[100px] sm:h-[30px] relative"

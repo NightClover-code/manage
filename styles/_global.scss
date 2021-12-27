@@ -12,8 +12,11 @@ p {
 }
 
 .button {
-  @apply bg-orange relative text-white shadow-main px-6 py-[10px] rounded-[8px] outline-none font-bold text-[16px] transition-all duration-250 ease-in-out
-    after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-black after:rounded-[8px] after:opacity-0 hover:after:opacity-[5%] after:transition-opacity after:duration-200 after:ease-in-out;
+  @apply bg-orange relative text-white shadow-main px-6 py-[10px] rounded-[8px] outline-none font-bold text-[16px] transition-all duration-250 ease-in-out button__overlay;
+}
+
+.button__overlay {
+  @apply after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-gray-500 after:rounded-[8px] after:opacity-0 hover:after:opacity-[20%] after:transition-opacity after:duration-250 after:ease-in-out;
 }
 
 .amazon {
@@ -52,4 +55,20 @@ span {
 
 .title {
   @apply text-[18px] text-white font-medium mb-3;
+}
+
+.list__item {
+  .special-svg {
+    path {
+      @apply transition__250;
+    }
+  }
+
+  &:hover {
+    .special-svg {
+      path {
+        @apply fill-orange;
+      }
+    }
+  }
 }

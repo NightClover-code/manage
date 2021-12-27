@@ -12,7 +12,7 @@ interface TestimonialsProps {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
-    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24">
+    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24 border-y-orange border-1">
       <div className="custom__container">
         <div className="flex items-end justify-between mockup5:flex-col mockup5:justify-start">
           <div className="max-w-[470px] mockup2:max-w-[440px] sm:!max-w-[360px] mockup5:!max-w-full">
@@ -35,14 +35,14 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
                 alt="arrow-left icon"
               />
               <CustomImage
-                className="flex__center bg-orange w-10 h-10 rounded-full ml-5 cursor-pointer shadow-arrow"
+                className="flex__center bg-orange w-10 h-10 rounded-full ml-4 cursor-pointer shadow-arrow"
                 src="/images/arrow-right.svg"
                 width={24}
                 height={24}
                 alt="arrow-right icon"
               />
             </div>
-            <Button className="button ml-16 mockup2:ml-6 lg:mt-5 sm:ml-0">
+            <Button className="button ml-10 mockup2:ml-6 lg:mt-5 sm:ml-0">
               Learn more
             </Button>
           </div>

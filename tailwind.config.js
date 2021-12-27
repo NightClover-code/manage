@@ -69,6 +69,9 @@ module.exports = {
       transitionDuration: {
         250: '250ms',
       },
+      borderWidth: {
+        1: '1px',
+      },
     },
   },
   plugins: [],

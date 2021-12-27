@@ -8,9 +8,9 @@ const Advantage: React.FC<AdvantageInterface> = ({
   image: { url, imgWidth, imgHeight, alt },
 }) => {
   return (
-    <div className="advatange">
+    <div>
       <CustomImage
-        className="bg-lightOrange w-[80px] h-[80px] flex__center rounded-[20px]"
+        className="bg-lightOrange w-[80px] h-[80px] flex__center rounded-[20px] border-orange border-1"
         src={url}
         width={imgWidth}
         height={imgHeight}
