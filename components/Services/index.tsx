@@ -51,8 +51,8 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
               {..._service}
               price={
                 isAnnual
-                  ? _service.price
-                  : Math.floor(_service.price - 0.17 * _service.price)
+                  ? Math.floor(_service.price - 0.17 * _service.price)
+                  : _service.price
               }
               key={randomID()}
             />
