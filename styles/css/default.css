@@ -44,7 +44,7 @@ span {
 }
 
 .special button {
-  @apply bg-white text-orange;
+  @apply bg-orange text-white border-2 border-white;
 }
 
 .white__logo svg path {

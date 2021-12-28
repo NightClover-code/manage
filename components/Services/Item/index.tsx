@@ -43,7 +43,7 @@ const Service: React.FC<ServiceProps> = ({
       </ul>
       <Button
         className={`text-orange font-bold w-full border-[2px] relative rounded-full border-orange py-[12px] mt-auto mb-8  transition__250 hover:bg-orange hover:text-white ${
-          isSpecial ? 'hover:border-white' : ''
+          isSpecial ? 'hover:bg-white hover:!text-orange' : ''
         }`}
       >
         Get Started
