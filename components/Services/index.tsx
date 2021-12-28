@@ -1,4 +1,5 @@
 //importing utils
+import { useState } from 'react';
 import { v4 as randomID } from 'uuid';
 //importing components
 import { ServiceInterface } from '../../interfaces';
@@ -9,6 +10,8 @@ interface ServicesProps {
 }
 
 const Services: React.FC<ServicesProps> = ({ services }) => {
+  const [isAnnual, setIsAnnual] = useState(false);
+
   return (
     <section className="mt-28 sm:mt-20">
       <div className="custom__container text-center">
@@ -24,8 +27,15 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
             <span className="text-xs font-semibold xs:text-xxs">
               Bill monthly
             </span>
-            <div className="flex items-center w-[36px] h-[18px] bg-orange mx-6 rounded-[10px] cursor-pointer xs:text-xs xs:mx-3">
-              <div className="block w-[13px] h-[13px] bg-white rounded-[10px] ml-1"></div>
+            <div
+              onClick={() => setIsAnnual(!isAnnual)}
+              className="flex items-center w-[36px] h-[18px] bg-orange mx-6 rounded-[10px] cursor-pointer xs:text-xs xs:mx-3"
+            >
+              <div
+                className={`block w-[13px] h-[13px] bg-white rounded-[10px] ml-1 transition__250 ${
+                  isAnnual ? 'translate-x-[14px]' : ''
+                }`}
+              ></div>
             </div>
             <span className="text-xs font-semibold xs:text-xxs">
               Bill annualy
@@ -35,9 +45,17 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
             17% Off
           </span>
         </div>
-        <div className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-40 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0">
+        <div className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-36 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0">
           {services.map(_service => (
-            <Service {..._service} key={randomID()} />
+            <Service
+              {..._service}
+              price={
+                isAnnual
+                  ? _service.price
+                  : Math.floor(_service.price - 0.17 * _service.price)
+              }
+              key={randomID()}
+            />
           ))}
         </div>
       </div>

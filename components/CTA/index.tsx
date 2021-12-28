@@ -2,7 +2,7 @@ import Button from '../Button';
 
 const CTA = () => {
   return (
-    <section className="bg-orange text-white text-center py-20">
+    <section className="bg-orange text-white text-center py-[70px]">
       <div className="custom__container">
         <h1 className="mx-auto">Simplify how your team works today.</h1>
         <p className="text-offWhite my-7 mx-auto sm:max-w-[280px]">
