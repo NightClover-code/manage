@@ -72,6 +72,15 @@ module.exports = {
       borderWidth: {
         1: '1px',
       },
+      animation: {
+        bounce: 'bounce 3s infinite',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-10%)' },
+          // '50%': { transform: 'rotate(3deg)' },
+        },
+      },
     },
   },
   plugins: [],

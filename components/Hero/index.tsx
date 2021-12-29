@@ -15,14 +15,14 @@ const Hero: React.FC<HeroProps> = ({ companies }) => {
     <section className="hero__section">
       <div className="custom__container">
         <CustomImage
-          className="absolute left-24 top-[40rem] lg:hidden xl:-left-8 xxl:top-[42rem] xxl:left-0"
+          className="animate-bounce absolute left-24 top-[40rem] lg:hidden xl:-left-8 xxl:top-[42rem] xxl:left-0"
           width={150}
           height={150}
           src="/images/icon-bell.svg"
           alt="bell-icon"
         />
         <CustomImage
-          className="absolute right-32 top-[26rem] lg:hidden xxl:right-5"
+          className="animate-bounce absolute right-32 top-[26rem] lg:hidden xxl:right-5"
           src="/images/icon-calendar.svg"
           width={150}
           height={150}
