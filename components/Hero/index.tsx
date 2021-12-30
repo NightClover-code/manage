@@ -12,7 +12,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ companies }) => {
   return (
-    <section className="hero__section">
+    <section className="hero__section" data-aos="fade-up">
       <div className="custom__container">
         <CustomImage
           className="animate-bounce absolute left-24 top-[40rem] lg:hidden xl:-left-8 xxl:top-[42rem] xxl:left-0"
