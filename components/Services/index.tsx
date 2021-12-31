@@ -15,14 +15,20 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
   return (
     <section className="mt-28 sm:mt-20">
       <div className="custom__container text-center">
-        <h1 className="mx-auto max-w-[600px]">
-          All the basics to getting work done.
-        </h1>
-        <p className="max-w-[550px] mx-auto mt-6">
-          We provide several plans for you to choose from, pick the most
-          suitable for your business.
-        </p>
-        <div className="flex__center mt-7 ml-20 sm:ml-10 xs:ml-5">
+        <div data-aos="fade-up">
+          <h1 className="mx-auto max-w-[600px]">
+            All the basics to getting work done.
+          </h1>
+          <p className="max-w-[550px] mx-auto mt-6">
+            We provide several plans for you to choose from, pick the most
+            suitable for your business.
+          </p>
+        </div>
+        <div
+          className="flex__center mt-7 ml-20 sm:ml-10 xs:ml-5"
+          data-aos="fade-up"
+          data-aos-delay={200}
+        >
           <div className="flex items-center">
             <span className="text-xs font-semibold xs:text-xxs">
               Bill monthly
@@ -45,7 +51,11 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
             17% Off
           </span>
         </div>
-        <div className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-36 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0">
+        <div
+          data-aos="fade-up"
+          data-aos-delay={400}
+          className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-36 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0"
+        >
           {services.map(_service => (
             <Service
               {..._service}

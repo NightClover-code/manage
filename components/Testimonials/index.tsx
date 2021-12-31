@@ -41,7 +41,10 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
     <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24 border-y-orange border-1">
       <div className="custom__container">
-        <div className="flex items-end justify-between mockup5:flex-col mockup5:justify-start">
+        <div
+          className="flex items-end justify-between mockup5:flex-col mockup5:justify-start"
+          data-aos="fade-up"
+        >
           <div className="max-w-[470px] mockup2:max-w-[440px] sm:!max-w-[360px] mockup5:!max-w-full">
             <h1>
               Join <span className="text-orange">350M+</span> users around the
@@ -77,6 +80,8 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay={300}
           ref={gridRef}
           className="grid grid-rows-testimonials mt-24 sm:mt-20 gap-10 grid-cols-testimonials sm:grid-cols-testimonialsRes sm:grid-rows-auto"
         >
