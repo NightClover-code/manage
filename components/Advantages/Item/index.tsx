@@ -2,13 +2,18 @@
 import { AdvantageInterface } from '../../../interfaces';
 import CustomImage from '../../CustomImage';
 
-const Advantage: React.FC<AdvantageInterface> = ({
+interface AdvantageProps extends AdvantageInterface {
+  order: number;
+}
+
+const Advantage: React.FC<AdvantageProps> = ({
   title,
   description,
   image: { url, imgWidth, imgHeight, alt },
+  order,
 }) => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-delay={150 * order}>
       <CustomImage
         className="bg-lightOrange w-[80px] h-[80px] flex__center rounded-[20px] border-orange border-1"
         src={url}

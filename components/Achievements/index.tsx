@@ -23,7 +23,7 @@ const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-delay={300}
+          data-aos-delay={200}
           className="grid grid-cols-4 mt-20 sm:mt-16 xs:mt-5 lg:grid-cols-2 lg:gap-10 xs:grid-cols-[80%] xs:justify-center xs:gap-0"
         >
           {achievements.map(achievement => {

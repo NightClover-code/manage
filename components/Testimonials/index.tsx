@@ -81,7 +81,6 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-delay={300}
           ref={gridRef}
           className="grid grid-rows-testimonials mt-24 sm:mt-20 gap-10 grid-cols-testimonials sm:grid-cols-testimonialsRes sm:grid-rows-auto"
         >

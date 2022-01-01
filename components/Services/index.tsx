@@ -53,7 +53,7 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-delay={400}
+          data-aos-delay={300}
           className="grid grid-cols-3 sm:!mt-16 items-end mockup2:mt-28 grid-rows-services gap-10 mt-36 mockup2:grid-cols-2 mockup2:gap-x-10 mockup2:gap-y-14 1100:gap-6 sm:!grid-cols-1 sm:!gap-x-0"
         >
           {services.map(_service => (

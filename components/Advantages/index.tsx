@@ -23,13 +23,9 @@ const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
           </p>
           <Button className="mt-8 button">Learn more</Button>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay={250}
-          className="lg:mt-28 sm:mt-24 lg:!grid-cols-2 xs:!grid-cols-1 grid grid-cols-advantages grid-rows-2 gap-20 mockup:gap-16 1100:grid-cols-advantagesRes items-center mockup2:grid-cols-advantagesRes2"
-        >
-          {advantages.map(_advantage => (
-            <Advantage key={randomID()} {..._advantage} />
+        <div className="lg:mt-28 sm:mt-24 lg:!grid-cols-2 xs:!grid-cols-1 grid grid-cols-advantages grid-rows-2 gap-20 mockup:gap-16 1100:grid-cols-advantagesRes items-center mockup2:grid-cols-advantagesRes2">
+          {advantages.map((_advantage, index) => (
+            <Advantage key={randomID()} {..._advantage} order={index} />
           ))}
         </div>
       </div>
