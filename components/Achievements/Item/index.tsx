@@ -1,6 +1,9 @@
+//importing types
 import { AchievementInterface } from '../../../interfaces';
+//importing components
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import { useState } from 'react';
 
 const Achievement: React.FC<AchievementInterface> = ({
   title,
@@ -9,6 +12,8 @@ const Achievement: React.FC<AchievementInterface> = ({
   borderLeft,
   borderBottom,
 }) => {
+  const [focus, setFocus] = useState(false);
+
   return (
     <div
       className={`p-2 lg:border-l-0 border-orange border-opacity-50 ${
@@ -17,9 +22,11 @@ const Achievement: React.FC<AchievementInterface> = ({
     >
       <h2 className="text-orange text-[45px] mockup2:text-[40px] lg:!text-[45px]">
         <div className="flex__center">
-          <CountUp end={result} duration={3}>
-            {({ countUpRef, start }) => (
-              <VisibilitySensor onChange={start} delayedCall>
+          <CountUp end={result} duration={3} redraw>
+            {({ countUpRef }) => (
+              <VisibilitySensor
+                onChange={isVisible => (isVisible ? setFocus(true) : null)}
+              >
                 <span ref={countUpRef} />
               </VisibilitySensor>
             )}
