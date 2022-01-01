@@ -1,4 +1,6 @@
 import { AchievementInterface } from '../../../interfaces';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Achievement: React.FC<AchievementInterface> = ({
   title,
@@ -14,8 +16,16 @@ const Achievement: React.FC<AchievementInterface> = ({
       } xs:p-12 ${borderBottom && 'xs:border-b-[1px]'}`}
     >
       <h2 className="text-orange text-[45px] mockup2:text-[40px] lg:!text-[45px]">
-        {result}
-        {resultType}
+        <div className="flex__center">
+          <CountUp end={result} duration={3}>
+            {({ countUpRef, start }) => (
+              <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+              </VisibilitySensor>
+            )}
+          </CountUp>
+          <div>{resultType}</div>
+        </div>
       </h2>
       <h3 className="text-offGray mt-2 font-medium mockup2:text-xs lg:!text-sm sm:mt-3">
         {title}
