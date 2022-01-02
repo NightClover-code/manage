@@ -58,7 +58,7 @@ const NavList = () => {
           className="list__item"
           onClick={() =>
             onListItemClickHandler('.testimonials__section', {
-              duration: 1200,
+              duration: 1400,
             })
           }
         >
