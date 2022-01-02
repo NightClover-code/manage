@@ -12,7 +12,7 @@ const NavBar = () => {
     <nav className="flex__between items-center mt-10 font-semibold">
       <Logo className="mt-2" color={!isNavHidden ? 'white' : '#213F70'} />
       {!isNavHidden ? (
-        <div className="flex-col">
+        <div className="flex-col absolute left-1/2 top-44 -translate-x-1/2 text-white w-[85%] text-center tracking-[2px] uppercase">
           <NavList />
         </div>
       ) : (

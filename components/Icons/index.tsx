@@ -44,7 +44,9 @@ export const Logo: React.FC<LogoProps> = ({ color = '#213F70', className }) => {
   );
 };
 
-export const ChevronDownIcon = () => (
+export const ChevronDownIcon: React.FC<{ color?: string }> = ({
+  color = '#213F70',
+}) => (
   <svg
     className="mt-1 special-svg"
     width="18"
@@ -55,7 +57,7 @@ export const ChevronDownIcon = () => (
   >
     <path
       d="M12.967 6.75C12.6745 6.4575 12.202 6.4575 11.9095 6.75L8.99952 9.66L6.08952 6.75C5.79702 6.4575 5.32452 6.4575 5.03202 6.75C4.73952 7.0425 4.73952 7.515 5.03202 7.8075L8.47452 11.25C8.76702 11.5425 9.23952 11.5425 9.53202 11.25L12.9745 7.8075C13.2595 7.5225 13.2595 7.0425 12.967 6.75Z"
-      fill="#213F70"
+      fill={color}
     />
   </svg>
 );

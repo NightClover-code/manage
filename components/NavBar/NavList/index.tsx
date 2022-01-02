@@ -37,7 +37,7 @@ const NavList = () => {
           About
         </li>
         <li
-          className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange"
+          className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange lg:!mx-0"
           onClick={() =>
             jump('.services__section', {
               offset: -100,
@@ -45,7 +45,8 @@ const NavList = () => {
             })
           }
         >
-          Services <ChevronDownIcon />
+          Services{' '}
+          <ChevronDownIcon color={isNavHidden ? '#213F70' : '#ffffff'} />
         </li>
         <li
           className="list__item"
@@ -61,9 +62,11 @@ const NavList = () => {
       <ul
         className={`flex__center lg:hidden ${!isNavHidden ? 'lg:!block' : ''}`}
       >
-        <li className="!mr-6 list__item">Login</li>
+        <li className="!mr-6 list__item lg:border-b-1 lg:!mx-0">Login</li>
         <li className="!mx-0">
-          <Button className="button">Sign up</Button>
+          <Button className="button lg:mt-10 lg:w-full lg:text-[18px] lg:py-4 lg:uppercase lg:tracking-[2px]">
+            Sign up
+          </Button>
         </li>
       </ul>
     </>
