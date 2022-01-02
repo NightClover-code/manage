@@ -7,7 +7,13 @@ import { NavContext } from '../../../context';
 import { useContext } from 'react';
 
 const NavList = () => {
-  const { isNavHidden } = useContext(NavContext);
+  const { isNavHidden, setIsNavHidden } = useContext(NavContext);
+
+  const onListItemClickHandler = (className: string, options: jump.Options) => {
+    setIsNavHidden(true);
+
+    jump(className, options);
+  };
 
   return (
     <>
@@ -17,7 +23,7 @@ const NavList = () => {
         <li
           className="list__item"
           onClick={() =>
-            jump('.advantages__section', {
+            onListItemClickHandler('.advantages__section', {
               offset: -150,
               duration: 1200,
             })
@@ -28,7 +34,7 @@ const NavList = () => {
         <li
           className="list__item"
           onClick={() =>
-            jump('.about__section', {
+            onListItemClickHandler('.about__section', {
               offset: -100,
               duration: 1200,
             })
@@ -39,7 +45,7 @@ const NavList = () => {
         <li
           className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange lg:!mx-0"
           onClick={() =>
-            jump('.services__section', {
+            onListItemClickHandler('.services__section', {
               offset: -100,
               duration: 1200,
             })
@@ -51,7 +57,7 @@ const NavList = () => {
         <li
           className="list__item"
           onClick={() =>
-            jump('.testimonials__section', {
+            onListItemClickHandler('.testimonials__section', {
               duration: 1200,
             })
           }

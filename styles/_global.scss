@@ -1,5 +1,5 @@
 nav .list__item {
-  @apply relative cursor-pointer mx-[22px] xl:mx-3 xl:text-xs leading-6 transition-all ease-in-out duration-250 after:absolute after:left-[50%] after:bottom-[-3px] after:translate-x-[-50%] after:scale-x-0 after:h-[1.75px] after:bg-blue after:transition-all after:duration-250 after:w-[96%] hover:after:translate-x-[-50%] hover:after:scale-100 lg:after:hidden lg:py-7 lg:border-t-1 lg:border-[rgba(95,104,141,.5)] lg:text-[18px] lg:mx-0 hover:text-orange;
+  @apply relative cursor-pointer mx-[22px] xl:mx-3 xl:text-xs leading-6 transition-all ease-in-out duration-250 after:absolute after:left-[50%] after:bottom-[-3px] after:translate-x-[-50%] after:scale-x-0 after:h-[1.75px] after:bg-blue after:transition-all after:duration-250 after:w-[96%] hover:after:translate-x-[-50%] hover:after:scale-100 lg:after:hidden lg:py-7 lg:border-t-1 lg:border-[rgba(95,104,141,.5)] lg:text-[18px] lg:mx-0 lg:hover:text-orange;
 }
 
 h1,
