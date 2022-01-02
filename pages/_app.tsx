@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import type { AppProps } from 'next/app';
 import MainLayout from '../layouts/MainLayout';
+import { NavProvider } from '../context';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -16,9 +17,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
+    <NavProvider>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </NavProvider>
   );
 }
 

@@ -63,9 +63,9 @@ export const ChevronDownIcon = () => (
 export const MenuIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
+    height="30px"
     viewBox="0 0 24 24"
-    width="24px"
+    width="30px"
     fill="rgb(33, 63, 112)"
   >
     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -76,9 +76,9 @@ export const MenuIcon = () => (
 export const CloseIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
+    height="30px"
     viewBox="0 0 24 24"
-    width="24px"
+    width="30px"
     fill="#ffffff"
   >
     <path d="M0 0h24v24H0V0z" fill="none" />

@@ -76,6 +76,10 @@ span {
   @apply fill-white;
 }
 
+.disable__scroll {
+  @apply m-0 overflow-hidden h-full;
+}
+
 * {
   margin: 0;
   padding: 0;

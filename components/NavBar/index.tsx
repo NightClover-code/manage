@@ -1,14 +1,17 @@
-//importing utils
+//importing hooks & utils
 import jump from 'jump.js';
+import { useContext } from 'react';
+import { NavContext } from '../../context';
 //importing components
 import Button from '../Button';
-import CustomImage from '../CustomImage';
-import { ChevronDownIcon, Logo } from '../Icons';
+import { ChevronDownIcon, CloseIcon, Logo, MenuIcon } from '../Icons';
 
 const NavBar = () => {
+  const { isNavHidden, setIsNavHidden } = useContext(NavContext);
+
   return (
     <nav className="flex__between mt-10 font-semibold">
-      <Logo className="mt-2" />
+      <Logo className="mt-2" color={!isNavHidden ? 'white' : '#213F70'} />
       <ul className="flex__center lg:hidden">
         <li
           className="list__item"
@@ -60,13 +63,12 @@ const NavBar = () => {
           <Button className="button">Sign up</Button>
         </li>
       </ul>
-      <CustomImage
-        className="hidden lg:block cursor-pointer"
-        src="/images/menu.svg"
-        width={30}
-        height={30}
-        alt="menu"
-      />
+      <div
+        className="cursor-pointer hidden lg:block"
+        onClick={() => setIsNavHidden(!isNavHidden)}
+      >
+        {isNavHidden ? <MenuIcon /> : <CloseIcon />}
+      </div>
     </nav>
   );
 };

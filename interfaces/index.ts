@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react';
+
 export interface AdvantageInterface {
   title: string;
   description: string;
@@ -32,4 +34,9 @@ export interface TestimonialInterface {
   content: string;
   avatar: ImageInterface;
   company: ImageInterface;
+}
+
+export interface isNavHiddenState {
+  isNavHidden: boolean;
+  setIsNavHidden: Dispatch<SetStateAction<boolean>>;
 }
