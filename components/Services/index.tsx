@@ -13,7 +13,7 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-    <section className="mt-28 sm:mt-20">
+    <section className="services__section mt-28 sm:mt-20">
       <div className="custom__container text-center">
         <div data-aos="fade-up">
           <h1 className="mx-auto max-w-[600px]">

@@ -10,7 +10,7 @@ interface AchievementsProps {
 
 const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
   return (
-    <section className="mt-28 lg:mt-24 bg-pink py-20 sm:pb-10 border-y-orange border-1">
+    <section className="about__section mt-28 lg:mt-24 bg-pink py-20 sm:pb-10 border-y-orange border-1">
       <div className="custom__container text-center overflow-hidden">
         <div data-aos="fade-up">
           <h1 className="mx-auto">

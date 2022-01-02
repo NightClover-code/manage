@@ -1,3 +1,5 @@
+//importing utils
+import jump from 'jump.js';
 //importing components
 import Button from '../Button';
 import CustomImage from '../CustomImage';
@@ -8,12 +10,49 @@ const NavBar = () => {
     <nav className="flex__between mt-10 font-semibold">
       <Logo className="mt-2" />
       <ul className="flex__center lg:hidden">
-        <li className="list__item">Features</li>
-        <li className="list__item">About</li>
-        <li className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange">
+        <li
+          className="list__item"
+          onClick={() =>
+            jump('.advantages__section', {
+              offset: -150,
+              duration: 1200,
+            })
+          }
+        >
+          Features
+        </li>
+        <li
+          className="list__item"
+          onClick={() =>
+            jump('.about__section', {
+              offset: -100,
+              duration: 1200,
+            })
+          }
+        >
+          About
+        </li>
+        <li
+          className="flex__center list__item !mr-2 hover:text-orange hover:after:bg-orange"
+          onClick={() =>
+            jump('.services__section', {
+              offset: -100,
+              duration: 1200,
+            })
+          }
+        >
           Services <ChevronDownIcon />
         </li>
-        <li className="list__item">Testimonials</li>
+        <li
+          className="list__item"
+          onClick={() =>
+            jump('.testimonials__section', {
+              duration: 1200,
+            })
+          }
+        >
+          Testimonials
+        </li>
       </ul>
       <ul className="flex__center lg:hidden">
         <li className="!mr-6 list__item">Login</li>
@@ -22,7 +61,7 @@ const NavBar = () => {
         </li>
       </ul>
       <CustomImage
-        className="hidden lg:block"
+        className="hidden lg:block cursor-pointer"
         src="/images/menu.svg"
         width={30}
         height={30}

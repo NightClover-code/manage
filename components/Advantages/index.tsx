@@ -11,7 +11,7 @@ interface AdvantagesProps {
 
 const Advantages: React.FC<AdvantagesProps> = ({ advantages }) => {
   return (
-    <section className="mt-36 lg:mt-20 1100:mt-32 xs:mt-16">
+    <section className="advantages__section mt-36 lg:mt-20 1100:mt-32 xs:mt-16">
       <div className="custom__container flex items-start justify-between lg:flex-col">
         <div className="max-w-[380px]" data-aos="fade-right">
           <h2 className="text-[45px] sm:text-[38px]">

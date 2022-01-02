@@ -39,7 +39,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   }, [counter, responsiveNum]);
 
   return (
-    <section className="bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24 border-y-orange border-1">
+    <section className="testimonials__section bg-pink py-28 mt-32 lg:mt-28 lg:py-24 sm:mt-24 border-y-orange border-1">
       <div className="custom__container">
         <div
           className="flex items-end justify-between mockup5:flex-col mockup5:justify-start"
