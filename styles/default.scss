@@ -39,3 +39,7 @@
 .transition__250 {
   @apply transition-all duration-250 ease-in-out;
 }
+
+.disable__scroll {
+  @apply m-0 overflow-hidden h-full;
+}

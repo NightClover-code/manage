@@ -76,10 +76,6 @@ span {
   @apply fill-white;
 }
 
-.disable__scroll {
-  @apply m-0 overflow-hidden h-full;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -113,5 +109,9 @@ span {
 
 .transition__250 {
   @apply transition-all duration-250 ease-in-out;
+}
+
+.disable__scroll {
+  @apply m-0 overflow-hidden h-full;
 }
 /*# sourceMappingURL=default.css.map */
