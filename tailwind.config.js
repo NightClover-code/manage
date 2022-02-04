@@ -14,6 +14,7 @@ module.exports = {
       mulish: ['Mulish', 'sans-serif'],
     },
     screens: {
+      huge: { min: '1700px' },
       xxl: { max: '1300px' },
       xl: { max: '980px' },
       lg: { max: '840px' },

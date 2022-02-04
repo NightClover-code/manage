@@ -84,7 +84,7 @@ span {
 }
 
 .custom__container {
-  @apply w-[85%] mx-auto sm:w-10/12;
+  @apply w-[85%] mx-auto sm:w-10/12 huge:w-[70%];
 }
 
 .app__container {
