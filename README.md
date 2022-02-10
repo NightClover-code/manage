@@ -10,10 +10,10 @@ So I went with tailwind for styling, as a developer who uses scss as a tool of c
 
 Here was the challenge:
 
-- View the optimal layout for each page depending on the device's screen size
+- View the optimal layout for each page depending on the device's screen size.
 - Providing all the content from GraphCMS (images, titles, descriptions etc.)
-- Implementing a working testimonial slider on all screen sizes
-- Beautiful scroll, javascript & css animations
+- Implementing a working testimonial slider on all screen sizes.
+- Beautiful scroll, javascript & css animations.
 
 ## Built With ✨
 
