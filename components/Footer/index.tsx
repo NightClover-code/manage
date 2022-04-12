@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div className="border-t-[1px] border-veryOffGray border-opacity-10 flex__between py-6">
           <p className="text-[13px] sm:text-[11px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
-            &copy; Copyright 2021, Manage Inc.
+            &copy; Copyright 2022, Manage Inc.
           </p>
           <p className="text-[13px] sm:text-[11px] text-veryOffWhite opacity-30 hover:text-orange transition__250 hover:opacity-100 cursor-pointer">
             Terms of Use & Privacy Policy
