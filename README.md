@@ -25,4 +25,8 @@ Here was the challenge:
 - Typescript
 - AOS - animation library
 
+## Author
+
+- [@achrafdev](https://achrafdev.com)
+
 **Thanks for sharing** 🚀
